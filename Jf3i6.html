@@ -1,4 +1,4 @@
-<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <!--		<s-c-r-i-p-t a-s-y-n-c s-r-c="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7250753558435816" crossorigin="anonymous"></script> --> <!--		<s-c-r-i-p-t type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script> -->		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script> 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> 		<script type="text/javascript" src="https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/J0306.js"></script> 		<script type="text/javascript" src="../reading/functions.js"></script> 		<link rel="stylesheet" href="../reading/layout.css"> 	</head> 	<body onload='f2();' onkeydown='f4()' oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"></div> 			<div id = "navigationBox"></div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>사용자가 년도와 달을 입력하면 달력을 출력하는 문제입니다 이를 해결하는 다음 프로그램을 해석하세요 </pre> 				<pre class='selectable'>년도를 입력하세요: <b><font color='red'>2020</font></b>
+<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script type="text/javascript" src="https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/J0306.js"></script> 		<script type="text/javascript" src="../reading/functions.js"></script> 		<link rel="stylesheet" href="../reading/layout.css"> 	</head> 	<body onload='f2();' onkeydown='f4()' oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"></div> 			<div id = "navigationBox"></div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>사용자가 년도와 달을 입력하면 달력을 출력하는 문제입니다 이를 해결하는 다음 프로그램을 해석하세요 </pre> 				<pre class='selectable'>년도를 입력하세요: <b><font color='red'>2020</font></b>
 월을 입력하세요: <b><font color='red'>2</font></b>
 	
               2020년 2월           
@@ -28,7 +28,7 @@
    11   12   13   14   15   16   17
    18   19   20   21   22   23   24
    25   26   27   28   29   30
-</pre><br> 	  				<h4>알고리즘</h4> 				<pre style='white-space:normal;'> 프로그램 시작 <br> &nbsp; &nbsp;년도와 달을 입력 <br> &nbsp; &nbsp;해당달의 시작요일과 말일을 계산하기 <br> &nbsp; &nbsp;달력을 출력 <br> 프로그램 종료 <br> <br> 해당달의 시작요일을 계산하는 함수 <br> &nbsp; &nbsp;1년1월1일부터 직전년도 12월31일까지 전체 날짜를 계산 <br> &nbsp; &nbsp;해당년도 1월1일부터 직전달 말일까지 날짜 계산 <br> &nbsp; &nbsp;해당달 1일이 일요일부터 월요일 사이에 어느 요일인지 계산 <br> <br> 해당달의 말일을 구하는 함수 <br> &nbsp; &nbsp;해당달이 2월이고 윤년이면, 29일 <br> &nbsp; &nbsp;아니면 월별 말일(31, 28, 31, 30, ... ) 값 적용 <br> <br> 달력을 출력하는 함수 <br> &nbsp; &nbsp;해당년도와 해당달을 출력 <br> &nbsp; &nbsp;1일 이전은 공백 출력 <br> &nbsp; &nbsp;1일부터 말일까지 <br> &nbsp; &nbsp;&nbsp; &nbsp;일주일을 한줄에 출력 <br> &nbsp; &nbsp;&nbsp; &nbsp;즉, 토요일 후 일요일은 새 줄에서 <br></pre> 		 				<br><h4>프로그램 코드 <input id='btn' type='button' value='실행순서 및 메모리상태 확인' onclick='f5();'/></h4>  				<div id = "codeBox"><pre id="code0" class="unselectable codeClass">	<font color="green">// 파일명 : ./Chapter03/Calendar_Main.java</font> 
+</pre><br> 	  				<h4>알고리즘</h4> 				<pre style='white-space:normal;'> 프로그램 시작 <br> &nbsp; &nbsp;년도와 달을 입력 <br> &nbsp; &nbsp;해당달의 시작요일과 말일을 계산하기 <br> &nbsp; &nbsp;달력을 출력 <br> 프로그램 종료 <br> <br> 해당달의 시작요일을 계산하는 메서드 <br> &nbsp; &nbsp;1년1월1일부터 직전년도 12월31일까지 전체 날짜를 계산 <br> &nbsp; &nbsp;해당년도 1월1일부터 직전달 말일까지 날짜 계산 <br> &nbsp; &nbsp;해당달 1일이 일요일부터 월요일 사이에 어느 요일인지 계산 <br> <br> 해당달의 말일을 구하는 메서드 <br> &nbsp; &nbsp;해당달이 2월이고 윤년이면, 29일 <br> &nbsp; &nbsp;아니면 월별 말일(31, 28, 31, 30, ... ) 값 적용 <br> <br> 달력을 출력하는 메서드 <br> &nbsp; &nbsp;해당년도와 해당달을 출력 <br> &nbsp; &nbsp;1일 이전은 공백 출력 <br> &nbsp; &nbsp;1일부터 말일까지 <br> &nbsp; &nbsp;&nbsp; &nbsp;일주일을 한줄에 출력 <br> &nbsp; &nbsp;&nbsp; &nbsp;즉, 토요일 후 일요일은 새 줄에서 <br></pre> 		 				<br><h4>프로그램 코드 <input id='btn' type='button' value='실행순서 및 메모리상태 확인' onclick='f5();'/></h4>  				<div id = "codeBox"><pre id="code0" class="unselectable codeClass">	<font color="green">// 파일명 : ./Chapter03/Calendar_Main.java</font> 
 </pre><pre id="code0" class="unselectable codeClass">	import java.util.Scanner; 
 </pre><pre id="code0" class="unselectable codeClass">		 
 </pre><pre id="code0" class="unselectable codeClass">	<font color='red' title="객체의 구조를 선언한 설계도">class</font> Calendar   
@@ -36,7 +36,7 @@
 </pre><pre id="code0" class="unselectable codeClass">		<font color="green">// 월별 말일</font> 		 
 </pre><pre id="code0" class="unselectable codeClass">		final int lastDayPerMonth[] = { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };   
 </pre><pre id="code0" class="unselectable codeClass">		 
-</pre><pre id="code0" class="unselectable codeClass">		<font color="green">// 해당년도가 윤년인지 평년인지 결정하는 함수</font>  
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">// 해당년도가 윤년인지 평년인지 결정하는 메서드</font>  
 </pre>
 <pre id="codeC1b" class="unselectable codeClass">C1b		<font color='red' title="해당 클래스 내에만 접근 허용">private</font> boolean IsLeapYear( int year )										 
 </pre><pre id="code0" class="unselectable codeClass">		{ 
@@ -64,7 +64,7 @@
 </pre>
 <pre id="codeC1e" class="unselectable codeClass">C1e		} 
 </pre><pre id="code0" class="unselectable codeClass">		 
-</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 해당달의 말일을 구하는 함수 </b></font>
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 해당달의 말일을 구하는 메서드 </b></font>
 </pre>
 <pre id="codeC2b" class="unselectable codeClass">C2b		<font color='red' title="모든 클래스에게 접근 허용">public</font> int getLastDay( int month, int year )									 
 </pre><pre id="code0" class="unselectable codeClass">		{ 
@@ -85,7 +85,7 @@
 </pre>
 <pre id="codeC2e" class="unselectable codeClass">C2e		} 
 </pre><pre id="code0" class="unselectable codeClass">				 
-</pre><pre id="code0" class="unselectable codeClass">		<font color="green">// 해당년도 1월1일부터 직전달 말일까지 날짜를 계산하는 함수</font>  
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">// 해당년도 1월1일부터 직전달 말일까지 날짜를 계산하는 메서드</font>  
 </pre>
 <pre id="codeC3b" class="unselectable codeClass">C3b		<font color='red' title="해당 클래스 내에만 접근 허용">private</font> int getTotalDaysBetweenNewYearsDayAnd( int previousMonth, int thisYear )				 
 </pre><pre id="code0" class="unselectable codeClass">		{ 
@@ -107,7 +107,7 @@
 </pre>
 <pre id="codeC3e" class="unselectable codeClass">C3e		} 
 </pre><pre id="code0" class="unselectable codeClass">		 
-</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 해당달의 시작요일을 계산하는 함수 </b></font>
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 해당달의 시작요일을 계산하는 메서드 </b></font>
 </pre>
 <pre id="codeC4b" class="unselectable codeClass">C4b		<font color='red' title="모든 클래스에게 접근 허용">public</font> int getFirstDay( int month, int year )							 
 </pre><pre id="code0" class="unselectable codeClass">		{ 
@@ -123,7 +123,7 @@
 </pre>
 <pre id="codeC4e" class="unselectable codeClass">C4e		} 
 </pre><pre id="code0" class="unselectable codeClass">		 
-</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 달력을 출력하는 함수 </b></font>
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 달력을 출력하는 메서드 </b></font>
 </pre>
 <pre id="codeC5b" class="unselectable codeClass">C5b		<font color='red' title="모든 클래스에게 접근 허용">public</font> void print( int year, int month, int firstDay, int lastDay )				 
 </pre><pre id="code0" class="unselectable codeClass">		{ 

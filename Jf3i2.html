@@ -1,4 +1,4 @@
-<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <!--		<s-c-r-i-p-t a-s-y-n-c s-r-c="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7250753558435816" crossorigin="anonymous"></script> --> <!--		<s-c-r-i-p-t type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script> -->		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script> 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> 		<script type="text/javascript" src="https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/J0302.js"></script> 		<script type="text/javascript" src="../reading/functions.js"></script> 		<link rel="stylesheet" href="../reading/layout.css"> 	</head> 	<body onload='f2();' onkeydown='f4()' oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"></div> 			<div id = "navigationBox"></div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>컵 3개 중 하나에 임의로 구슬을 숨기고 참여자에게 컵 번호를 입력받아 구슬을 찾는 문제입니다 이를 해결하는 다음 프로그램을 해석하세요 </pre> 				<pre class='selectable'>1, 2, 3 중에서 구슬[●]을 숨긴 컵을 찾으세요 : <b><font color='red'>2</font></b>
+<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script type="text/javascript" src="https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/J0302.js"></script> 		<script type="text/javascript" src="../reading/functions.js"></script> 		<link rel="stylesheet" href="../reading/layout.css"> 	</head> 	<body onload='f2();' onkeydown='f4()' oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"></div> 			<div id = "navigationBox"></div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>컵 3개 중 하나에 임의로 구슬을 숨기고 참여자에게 컵 번호를 입력받아 구슬을 찾는 문제입니다 이를 해결하는 다음 프로그램을 해석하세요 </pre> 				<pre class='selectable'>1, 2, 3 중에서 구슬[●]을 숨긴 컵을 찾으세요 : <b><font color='red'>2</font></b>
   ___    ___    ___  
  |   |  |   |  |   | 
  |   |  |   |  |   | 
@@ -28,7 +28,7 @@
         놓쳤다!        
  1, 2, 3 중에서 구슬[●]을 숨긴 컵을 찾으세요 : <b><font color='red'>0</font></b>
  게임을 종료합니다. 다음에 또 만나요!
-</pre><br> 	  				<h4>알고리즘</h4> 				<pre style='white-space:normal;'> 프로그램시작 <br> &nbsp; &nbsp;구슬 찾기 객체 생성 <br> &nbsp; &nbsp;구슬 찾기 게임 진행 <br> &nbsp; &nbsp;구슬 찾기 게임 결과 출력 <br> 프로그램 종료 <br> <br> 구슬 찾기 게임 진행하는 메서드 시작 <br> &nbsp; &nbsp;컵 3개 중 하나에 임의로 구슬을 숨기기 <br> &nbsp; &nbsp;참여자는 컵 번호를 키보드에서 입력 <br> &nbsp; &nbsp;구슬찾기 게임의 승패를 판정 <br> 구슬 찾기 게임 진행하는 메서드 종료 <br></pre> 		 				<br><h4>프로그램 코드 <input id='btn' type='button' value='실행순서 및 메모리상태 확인' onclick='f5();'/></h4>  				<div id = "codeBox"><pre id="code0" class="unselectable codeClass">	<font color="green">// 파일명 : ./Chapter03/ThreeCupGame_Main.java</font> 
+</pre><br> 	  				<h4>알고리즘</h4> 				<pre style='white-space:normal;'> 프로그램시작 <br> &nbsp; &nbsp;구슬 찾기 객체 생성 <br> &nbsp; &nbsp;구슬 찾기 게임 진행 <br> &nbsp; &nbsp;구슬 찾기 게임 결과 출력 <br> 프로그램 종료 <br> <br> 구슬 찾기 게임 진행하는 메서드 <br> &nbsp; &nbsp;컵 3개 중 하나에 임의로 구슬을 숨기기 <br> &nbsp; &nbsp;참여자는 컵 번호를 키보드에서 입력 <br> &nbsp; &nbsp;구슬찾기 게임의 승패를 판정 <br></pre> 		 				<br><h4>프로그램 코드 <input id='btn' type='button' value='실행순서 및 메모리상태 확인' onclick='f5();'/></h4>  				<div id = "codeBox"><pre id="code0" class="unselectable codeClass">	<font color="green">// 파일명 : ./Chapter03/ThreeCupGame_Main.java</font> 
 </pre><pre id="code0" class="unselectable codeClass">	import java.util.Scanner; 
 </pre><pre id="code0" class="unselectable codeClass">	 
 </pre><pre id="code0" class="unselectable codeClass">	<font color="green">/** </font>
@@ -92,7 +92,7 @@
 </pre><pre id="code0" class="unselectable codeClass">		 <font color="green">* @param scan 키보드 입력을 위한 Scanner 객체</font> 
 </pre><pre id="code0" class="unselectable codeClass">		 <font color="green">* @return 구슬찾기 게임을 진행한 결과</font> 
 </pre><pre id="code0" class="unselectable codeClass">		 <font color="green">*/</font> 
-</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 구슬 찾기 게임 진행하는 메서드 시작 </b></font>
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 구슬 찾기 게임 진행하는 메서드 </b></font>
 </pre>
 <pre id="codeG3" class="unselectable codeClass">G3		<font color='red' title="모든 클래스에게 접근 허용">public</font> String play( Scanner scan )				 
 </pre><pre id="code0" class="unselectable codeClass">		{	 
@@ -112,7 +112,6 @@
 </pre>
 <pre id="codeG9" class="unselectable codeClass">G9			                getResult( player, ball ); 
 </pre><pre id="code0" class="unselectable codeClass"> 
-</pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> 구슬 찾기 게임 진행하는 메서드 종료 </b></font>
 </pre>
 <pre id="codeG91" class="unselectable codeClass">G91			return result;	 
 </pre><pre id="code0" class="unselectable codeClass">		} 

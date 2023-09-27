@@ -8,7 +8,7 @@
 		 
 class RecursiveFactorial  
 { 
-	int <input id='blank0' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(0)'>( int num )	 
+	public int <input id='blank0' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(0)'>( int num )	 
 	{ 
 		<input id='blank1' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(1)'> ( <input id='blank2' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(2)'> )							 
 		{ 
@@ -23,13 +23,12 @@ class RecursiveFactorial
 		} 
 	} 
 	 
-	int getNum( Scanner scan ) 
+	public int getNum( Scanner scan ) 
 	{ 
 		int num = 0;	 
 	 
 		System.out.print( "숫자를 입력하세요: "); 
-		num = scan.nextInt(); 
-	 
+		num = scan.nextInt();		 
 		<input id='blank7' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(7)'> num;	 
 	} 
 } 
