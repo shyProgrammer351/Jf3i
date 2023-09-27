@@ -1,0 +1,40 @@
+<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script type="text/javascript" src="https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/J0309.js"></script> 		<script type="text/javascript" src="../reading/functions.js"></script> 		<link rel="stylesheet" href="../reading/layout.css"> 		<script> 			var d10 = "11 12 13 1 2 4 5 1 2 4 5 1 2 3 9 10 8 6 9 10 7 1 2 3 9 10 8 8 6 9 10 7 1 2 4 5 1 2 3 9 10 8 6 9 10 7 1 2 3 9 10 8 8 8 14"; 		</script> 	</head> 	<body onload='f1();' onkeydown='f4()' oncontextmenu="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> 			</div> 			<div id = "navigationBox"> 			</div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>하노이 탑에 첫번째 기둥에 있는 디스크를 세번째 기둥으로 모두 옮기는 문제입니다 실행순서를 클릭하세요 의 알고리즘을 한국어로 설명하세요.</pre> 				<pre class='selectable'>Move one disk from 1 to 3
+Move one disk from 1 to 2
+Move one disk from 3 to 2
+Move one disk from 1 to 3
+Move one disk from 2 to 1
+Move one disk from 2 to 3
+Move one disk from 1 to 3
+</pre><br>  	 				<h4>프로그램 코드</h4> 				<pre>
+</pre><pre id="code0" class="unselectable codeClass">	class TowerOfHanoi
+</pre><pre id="code0" class="unselectable codeClass">	{
+</pre><pre id="code1" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('1')">1		public void moveTower( int numDisks, int start, int temp, int end ) 
+</pre><pre id="code0" class="unselectable codeClass">		{
+</pre><pre id="code2" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('2')">2			if (numDisks == 1)
+</pre><pre id="code3" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('3')">3				moveOneDisk (start, end);	
+</pre><pre id="code4" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('4')">4			else
+</pre><pre id="code0" class="unselectable codeClass">			{
+</pre><pre id="code5" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('5')">5				moveTower( numDisks-1, start, end, temp );	
+</pre><pre id="code6" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('6')">6				moveOneDisk (start, end);	
+</pre><pre id="code7" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('7')">7				moveTower( numDisks-1, temp, start, end );	
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre><pre id="code8" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('8')">8		}
+
+</pre><pre id="code9" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('9')">9	   private void moveOneDisk (int start, int end ) 
+</pre><pre id="code0" class="unselectable codeClass">	   {
+</pre><pre id="code10" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('10')">10	      System.out.println ("Move one disk from " + start + " to " + end);
+</pre><pre id="code0" class="unselectable codeClass">	   }
+</pre><pre id="code0" class="unselectable codeClass">	}
+
+</pre><pre id="code0" class="unselectable codeClass">	public class TowerOfHanoi_Main
+</pre><pre id="code0" class="unselectable codeClass">	{
+
+</pre><pre id="code11" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('11')">11	   public static void main (String[] args)
+</pre><pre id="code0" class="unselectable codeClass">	   {
+</pre><pre id="code12" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('12')">12	      TowerOfHanoi towers = new TowerOfHanoi();
+</pre><pre id="code13" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('13')">13	      towers.moveTower( 3, 1, 2, 3 ); 
+</pre><pre id="code14" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('14')">14		  return;
+</pre><pre id="code0" class="unselectable codeClass">	   }
+</pre><pre id="code0" class="unselectable codeClass">	}
+</pre>
+</pre> 			</div> 			<div id = "floatingBox"> 				<b>실행 순서</b> 				<pre id = "d4" style='white-space:normal; word-wrap:break-word; width:150px;'></pre> 			</div> 		</div> 	</body> </html>   

@@ -1,0 +1,121 @@
+<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <!--		<s-c-r-i-p-t a-s-y-n-c s-r-c="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7250753558435816" crossorigin="anonymous"></script> --> <!--		<s-c-r-i-p-t type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script> -->		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script> 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> 		<script type="text/javascript" src="https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/J0305.js"></script> 		<script type="text/javascript" src="../reading/functions.js"></script> 		<link rel="stylesheet" href="../reading/layout.css"> 	</head> 	<body onload='f2();' onkeydown='f4()' oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"></div> 			<div id = "navigationBox"></div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>국민은행, 우리은행, 하나은행에서 통장을 만들어 각각 1000원, 2000원, 3000원을 입금 후 총 예금액을 출력하는 문제입니다 이를 해결하는 다음 프로그램을 해석하세요 </pre> 				<pre class='selectable'>국민은행 통장 : 1000원<b><font color='red'></font></b>
+총 예금액 : 1000원
+우리은행 통장 : 2000원
+총 예금액 : 3000원
+하나은행 통장 : 3000원
+총 예금액 : 6000원
+(전체 총 예금액) 6000원
+</pre><br><pre class='selectable'>국민은행 통장 : 1000원<b><font color='red'></font></b>
+총 예금액 : 1000원
+우리은행 통장 : 2000원
+총 예금액 : 3000원
+하나은행 통장 : 3000원
+총 예금액 : 6000원
+(전체 총 예금액) 6000원
+</pre><br><pre class='selectable'>국민은행 통장 : 1000원<b><font color='red'></font></b>
+총 예금액 : 1000원
+우리은행 통장 : 2000원
+총 예금액 : 3000원
+하나은행 통장 : 3000원
+총 예금액 : 6000원
+(전체 총 예금액) 6000원
+</pre><br> 	  				<h4>알고리즘</h4> 				<pre style='white-space:normal;'>프로그램 시작 <br>&nbsp; &nbsp;국민은행 통장 만들어 1000원 입금 후 출력 <br>&nbsp; &nbsp;우리은행 통장 만들어 2000원 입금 후 출력 <br>&nbsp; &nbsp;하나은행 통장 만들어 3000원 입금 후 출력 <br>&nbsp; &nbsp;전체 전체 총 예금액 출력 <br>프로그램 종료 <br></pre> 		 				<br><h4>프로그램 코드 <input id='btn' type='button' value='실행순서 및 메모리상태 확인' onclick='f5();'/></h4>  				<div id = "codeBox"><pre id="code0" class="unselectable codeClass">	<font color="green">// 파일명 : ./Chapter03/Bankbook_Main.java</font> 
+</pre><pre id="code0" class="unselectable codeClass">	class Bankbook 
+</pre><pre id="code0" class="unselectable codeClass">	{ 
+</pre><pre id="code0" class="unselectable codeClass">		<font color='red' title="해당 클래스 내에만 접근 허용">private</font> String id;									 
+</pre><pre id="code0" class="unselectable codeClass">		<font color='red' title="해당 클래스 내에만 접근 허용">private</font> int money;									 
+</pre><pre id="code0" class="unselectable codeClass">		<font color='red' title="해당 클래스 내에만 접근 허용">private</font> <font color='red' title="정적으로 할당되어 프로그램 시작부터 종료까지 메모리에 한번 생성">static</font> int totalMoney  = 0;	 
+</pre><pre id="code0" class="unselectable codeClass">		 
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">// 통장 초기화</font>  
+</pre>
+<pre id="code1" class="unselectable codeClass">1		public Bankbook( String id ) 
+</pre><pre id="code0" class="unselectable codeClass">		{ 
+</pre><pre id="code0" class="unselectable codeClass">			this.id = id; 
+</pre>
+<pre id="code2" class="unselectable codeClass">2			this.money = 0; 
+</pre><pre id="code0" class="unselectable codeClass">		} 
+</pre><pre id="code0" class="unselectable codeClass">	 
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">// 통장 입금</font> 
+</pre>
+<pre id="code3" class="unselectable codeClass">3		public int deposit( int money )	  
+</pre><pre id="code0" class="unselectable codeClass">		{ 
+</pre><pre id="code0" class="unselectable codeClass">			this.money += money; 
+</pre><pre id="code0" class="unselectable codeClass">			this.totalMoney += money; 
+</pre>
+<pre id="code4" class="unselectable codeClass">4			return this.money; 
+</pre><pre id="code0" class="unselectable codeClass">		} 
+</pre><pre id="code0" class="unselectable codeClass">	 
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">// 통장 내역 문자열 변환</font> 
+</pre>
+<pre id="code5" class="unselectable codeClass">5		public String <font color='red' title="해당 객체를 문자열로 변환하는 메서드">toString</font>()	 
+</pre><pre id="code0" class="unselectable codeClass">		{ 
+</pre>
+<pre id="code6" class="unselectable codeClass">6			return this.id + " : " + this.money + "원\n총 예금액 : " + totalMoney + "원"; 
+</pre><pre id="code0" class="unselectable codeClass">		} 
+</pre><pre id="code0" class="unselectable codeClass">		 
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">// 전체 통장의 총 예금액</font> 
+</pre>
+<pre id="code7" class="unselectable codeClass">7		public <font color='red' title="정적으로 할당되어 프로그램 시작부터 종료까지 메모리에 한번 생성">static</font> int getTotalMoney()	 
+</pre><pre id="code0" class="unselectable codeClass">		{ 
+</pre>
+<pre id="code8" class="unselectable codeClass">8			return totalMoney; 
+</pre><pre id="code0" class="unselectable codeClass">		} 
+</pre><pre id="code0" class="unselectable codeClass">	} 
+</pre><pre id="code0" class="unselectable codeClass">	 
+</pre><pre id="code0" class="unselectable codeClass">	public class Bankbook_Main 
+</pre><pre id="code0" class="unselectable codeClass">	{ 
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 프로그램 시작 </b></font>
+</pre>
+<pre id="code9" class="unselectable codeClass">9		public <font color='red' title="정적으로 할당되어 프로그램 시작부터 종료까지 메모리에 한번 생성">static</font> void main (String[] args)	 
+</pre><pre id="code0" class="unselectable codeClass">		{ 
+</pre><pre id="code0" class="unselectable codeClass">			Bankbook bankbook; 
+</pre><pre id="code0" class="unselectable codeClass">	 
+</pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> 국민은행 통장 만들어 1000원 입금 후 출력 </b></font>
+</pre>
+<pre id="code10" class="unselectable codeClass">10			bankbook =  
+</pre>
+<pre id="code11" class="unselectable codeClass">11			           new Bankbook ( "국민은행 통장" ); 
+</pre>
+<pre id="code12" class="unselectable codeClass">12			bankbook.deposit( 1000 ); 
+</pre>
+<pre id="code13" class="unselectable codeClass">13			System.out.println( 
+</pre>
+<pre id="code14" class="unselectable codeClass">14			                    bankbook );  
+</pre><pre id="code0" class="unselectable codeClass">	 
+</pre><pre id="code0" class="unselectable codeClass"> 
+</pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> 우리은행 통장 만들어 2000원 입금 후 출력 </b></font>
+</pre>
+<pre id="code15" class="unselectable codeClass">15			bankbook =  
+</pre>
+<pre id="code16" class="unselectable codeClass">16			           new Bankbook ( "우리은행 통장" ); 
+</pre>
+<pre id="code17" class="unselectable codeClass">17			bankbook.deposit( 2000 ); 
+</pre>
+<pre id="code18" class="unselectable codeClass">18			System.out.println( 
+</pre>
+<pre id="code19" class="unselectable codeClass">19			                    bankbook );	  
+</pre><pre id="code0" class="unselectable codeClass">	 
+</pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> 하나은행 통장 만들어 3000원 입금 후 출력 </b></font>
+</pre>
+<pre id="code20" class="unselectable codeClass">20			bankbook =  
+</pre>
+<pre id="code21" class="unselectable codeClass">21			           new Bankbook ( "하나은행 통장" ); 
+</pre>
+<pre id="code22" class="unselectable codeClass">22			bankbook.deposit( 3000 ); 
+</pre>
+<pre id="code23" class="unselectable codeClass">23			System.out.println( 
+</pre>
+<pre id="code24" class="unselectable codeClass">24			                    bankbook );  
+</pre><pre id="code0" class="unselectable codeClass">	 
+</pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> 전체 전체 총 예금액 출력 </b></font>
+</pre>
+<pre id="code25" class="unselectable codeClass">25			System.out.println( "(전체 총 예금액) "  
+</pre>
+<pre id="code26" class="unselectable codeClass">26						+ Bankbook.getTotalMoney() + "원" );  
+</pre><pre id="code0" class="unselectable codeClass">			 
+</pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> 프로그램 종료 </b></font>
+</pre>
+<pre id="code27" class="unselectable codeClass">27			return; 
+</pre><pre id="code0" class="unselectable codeClass">		} 
+</pre><pre id="code0" class="unselectable codeClass">	} 
+</pre></div>	 	 				<br><h4>키워드 설명</h4> 				<pre id = "d3" style='white-space:normal;'></pre> 			 				<h4>실행 순서</h4> 				<pre id = "d4" style='white-space:normal; width:800px;'> </pre> 				<pre style='white-space:normal;'> 					※ 실행순서 및 메모리상태는 A키(이전)및 D키(다음)를 눌러도 확인할 수 있습니다  				</pre> 				<br><br> 			</div> 			<div id = "floatingBox"> 				<pre id = "outputBox" class ="outputBox"></pre>  				<div id = "intermediateResult"> 					<img id = "d7"> 					<table style = "border-spacing:0px;margin:0px;table-layout:auto;"> 						<tbody id = "d8"></tbody> 					</table> 				</div> 			</div> 		</div> 	</body> </html> 

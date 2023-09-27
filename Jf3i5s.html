@@ -1,0 +1,70 @@
+<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script type="text/javascript" src="https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/J0305.js"></script> 		<script type="text/javascript" src="../reading/functions.js"></script> 		<link rel="stylesheet" href="../reading/layout.css"> 		<script> 			var d10 = "9 11 1 2 10 12 3 4 14 5 6 13 16 1 2 15 17 3 4 19 5 6 18 21 1 2 20 22 3 4 24 5 6 23 26 7 8 25 27"; 		</script> 	</head> 	<body onload='f1();' onkeydown='f4()' oncontextmenu="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> 			</div> 			<div id = "navigationBox"> 			</div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>국민은행, 우리은행, 하나은행에서 통장을 만들어 각각 1000원, 2000원, 3000원을 입금 후 총 예금액을 출력하는 문제입니다 실행순서를 클릭하세요 </pre> 				<pre class='selectable'>국민은행 통장 : 1000원<b><font color='red'></font></b>
+총 예금액 : 1000원
+우리은행 통장 : 2000원
+총 예금액 : 3000원
+하나은행 통장 : 3000원
+총 예금액 : 6000원
+(전체 총 예금액) 6000원
+</pre><br>  	 				<h4>프로그램 코드</h4> 				<pre></pre><pre id="code0" class="unselectable codeClass">	class Bankbook
+</pre><pre id="code0" class="unselectable codeClass">	{
+</pre><pre id="code0" class="unselectable codeClass">		private String id;									
+</pre><pre id="code0" class="unselectable codeClass">		private int money;									
+</pre><pre id="code0" class="unselectable codeClass">		private static int totalMoney  = 0;	
+</pre><pre id="code0" class="unselectable codeClass">		
+</pre><pre id="code1" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('1')">1		public Bankbook( String id )
+</pre><pre id="code0" class="unselectable codeClass">		{
+</pre><pre id="code0" class="unselectable codeClass">			this.id = id;
+</pre><pre id="code2" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('2')">2			this.money = 0;
+</pre><pre id="code0" class="unselectable codeClass">		}
+
+</pre><pre id="code3" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('3')">3		public int deposit( int money )	 
+</pre><pre id="code0" class="unselectable codeClass">		{
+</pre><pre id="code0" class="unselectable codeClass">			this.money += money;
+</pre><pre id="code0" class="unselectable codeClass">			this.totalMoney += money;
+</pre><pre id="code4" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('4')">4			return this.money;
+</pre><pre id="code0" class="unselectable codeClass">		}
+
+</pre><pre id="code5" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('5')">5		public String toString()	
+</pre><pre id="code0" class="unselectable codeClass">		{
+</pre><pre id="code6" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('6')">6			return this.id + " : " + this.money + "원\n총 예금액 : " + totalMoney + "원";
+</pre><pre id="code0" class="unselectable codeClass">		}
+</pre><pre id="code0" class="unselectable codeClass">		
+</pre><pre id="code7" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('7')">7		public static int getTotalMoney()	
+</pre><pre id="code0" class="unselectable codeClass">		{
+</pre><pre id="code8" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('8')">8			return totalMoney;
+</pre><pre id="code0" class="unselectable codeClass">		}
+</pre><pre id="code0" class="unselectable codeClass">	}
+
+</pre><pre id="code0" class="unselectable codeClass">	public class Bankbook_Main
+</pre><pre id="code0" class="unselectable codeClass">	{
+</pre><pre id="code9" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('9')">9		public static void main (String[] args)	
+</pre><pre id="code0" class="unselectable codeClass">		{
+</pre><pre id="code0" class="unselectable codeClass">			Bankbook bankbook;
+
+</pre><pre id="code10" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('10')">10			bankbook = 
+</pre><pre id="code11" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('11')">11			           new Bankbook ( "국민은행 통장" );
+</pre><pre id="code12" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('12')">12			bankbook.deposit( 1000 );
+</pre><pre id="code13" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('13')">13			System.out.println(
+</pre><pre id="code14" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('14')">14			                    bankbook ); 
+
+
+</pre><pre id="code15" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('15')">15			bankbook = 
+</pre><pre id="code16" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('16')">16			           new Bankbook ( "우리은행 통장" );
+</pre><pre id="code17" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('17')">17			bankbook.deposit( 2000 );
+</pre><pre id="code18" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('18')">18			System.out.println(
+</pre><pre id="code19" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('19')">19			                    bankbook );	 
+
+</pre><pre id="code20" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('20')">20			bankbook = 
+</pre><pre id="code21" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('21')">21			           new Bankbook ( "하나은행 통장" );
+</pre><pre id="code22" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('22')">22			bankbook.deposit( 3000 );
+</pre><pre id="code23" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('23')">23			System.out.println(
+</pre><pre id="code24" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('24')">24			                    bankbook ); 
+
+</pre><pre id="code25" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('25')">25			System.out.println( "(전체 총 예금액) " 
+</pre><pre id="code26" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('26')">26						+ Bankbook.getTotalMoney() + "원" ); 
+</pre><pre id="code0" class="unselectable codeClass">			
+</pre><pre id="code27" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('27')">27			return;
+</pre><pre id="code0" class="unselectable codeClass">		}
+</pre><pre id="code0" class="unselectable codeClass">	}
+</pre>
+</pre> 			</div> 			<div id = "floatingBox"> 				<b>실행 순서</b> 				<pre id = "d4" style='white-space:normal; word-wrap:break-word; width:150px;'></pre> 			</div> 		</div> 	</body> </html>   

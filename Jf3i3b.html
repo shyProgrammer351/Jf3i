@@ -1,0 +1,141 @@
+<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script type="text/javascript" src="https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/J0303.js"></script> 		<script type="text/javascript" src="../reading/functions.js"></script> 		<link rel="stylesheet" href="../reading/layout.css"> 		<script> 			const d10 = [ [ "class" ], [ "public" ], [ "final" ], [ "public" ], [ "final" ], [ "public" ], [ "final" ], [ "private","protected","public" ], [ "private","protected","public" ], [ "public" ], [ "this" ], [ "this" ], [ "public" ], [ "play" ], [ "this" ], [ "selectRockPaperScissors" ], [ "this" ], [ "selectRockPaperScissors" ], [ "this" ], [ "this" ], [ "public" ], [ "play" ], [ "this" ], [ "this" ], [ "this" ], [ "this" ], [ "private","protected","public" ], [ "private","protected","public" ], [ "selectRockPaperScissors" ], [ "private","protected","public" ], [ "selectRockPaperScissors" ], [ "private","protected","public" ], [ "public" ], [ "class" ], [ "public" ], [ "static" ], 							]; 		</script> 	</head> 	<body onload='f1();' onkeydown='f4()' oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> 			</div> 			<div id = "navigationBox"> 			</div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>A양이 가위바위보를 선택하면 B군이 임의로 가위바위보를 선택하고 가위바위보의 승패를 출력하는 문제입니다 이를 해결하는 다음 프로그램에 대해 빈칸을 채우세요 </pre> 				<pre class='selectable'>가위, 바위, 보 중 하나를 입력하세요 : <b><font color='red'>가위</font></b>
+플레이어 A는 가위를 냈습니다.
+플레이어 B는 보를 냈습니다.
+판정결과는 플레이어 A가 이겼습니다
+</pre><br><pre class='selectable'>가위, 바위, 보 중 하나를 입력하세요 : <b><font color='red'>바위</font></b>
+플레이어 A는 바위를 냈습니다.
+플레이어 B는 보를 냈습니다.
+판정결과는 플레이어 B가 이겼습니다
+</pre><br><pre class='selectable'>가위, 바위, 보 중 하나를 입력하세요 : <b><font color='red'>보</font></b>
+플레이어 A는 보를 냈습니다.
+플레이어 B는 가위를 냈습니다.
+판정결과는 플레이어 B가 이겼습니다
+</pre><br>  	  				<h4>코드 빈칸 채우기</h4> 				<pre style='white-space:pre;border:1px'>import java.util.Scanner; 
+ 
+<input id='blank0' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(0)'> RockPaperScissors							 
+{ 
+	<input id='blank1' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(1)'> <input id='blank2' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(2)'> int ROCK = 0;					 
+	<input id='blank3' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(3)'> <input id='blank4' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(4)'> int PAPER = 1;					 
+	<input id='blank5' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(5)'> <input id='blank6' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(6)'> int SCISSORS = 2;				 
+ 
+	<input id='blank7' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(7)'> String playerA;					 
+	<input id='blank8' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(8)'> String playerB;					 
+ 
+	<input id='blank9' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(9)'> RockPaperScissors()					 
+	{	 
+		<input id='blank10' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(10)'>.playerA = "가위";					 
+		<input id='blank11' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(11)'>.playerB = "바위";					 
+	} 
+	 
+	<input id='blank12' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(12)'> String <input id='blank13' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(13)'>( Scanner scan )						 
+	{	 
+		<input id='blank14' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(14)'>.playerA = 										 
+		               <input id='blank15' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(15)'>( scan );  
+		 
+		<input id='blank16' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(16)'>.playerB = 										 
+		               <input id='blank17' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(17)'>();				  
+ 
+		String result =  
+		               getResult( <input id='blank18' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(18)'>.playerA, <input id='blank19' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(19)'>.playerB );		 
+ 
+		return result; 
+	} 
+	 
+	<input id='blank20' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(20)'> String <input id='blank21' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(21)'>( String playerA )		 
+	{ 
+		<input id='blank22' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(22)'>.playerA = playerA;					 
+		 
+		<input id='blank23' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(23)'>.playerB = 							 
+		               selectRockPaperScissors(); 
+ 
+		String result =  
+		               getResult( <input id='blank24' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(24)'>.playerA, <input id='blank25' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(25)'>.playerB );					 
+ 
+		return result; 
+	} 
+	 
+	<input id='blank26' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(26)'> String getResult( String playerA, String playerB )	 
+	{ 
+		String result = ""; 
+		result += "플레이어 A는 " + playerA +"를 냈습니다.\n"; 
+		result += "플레이어 B는 " + playerB +"를 냈습니다.\n"; 
+		 
+		result += "판정결과는 "  
+		                  + judge( playerA, playerB ) + "\n"; 
+		 
+		return result; 
+	} 
+ 
+	<input id='blank27' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(27)'> String <input id='blank28' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(28)'>( Scanner scan )	 
+	{ 
+		String result = ""; 
+		 
+		do 
+		{ 
+			System.out.print( "가위, 바위, 보 중 하나를 입력하세요 : "); 
+			result = scan.next(); 
+			 
+		} while( !result.equals( "가위" ) && !result.equals( "바위" ) && !result.equals( "보" ) ); 
+			 
+		return result; 
+	} 
+ 
+	<input id='blank29' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(29)'> String <input id='blank30' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(30)'>()					 
+	{ 
+		int num = (int)(Math.random()*3); 
+		String result = ""; 
+		 
+		if ( num == SCISSORS ) 
+		{ 
+			result = "가위"; 
+		} 
+		else if ( num == ROCK ) 
+		{ 
+			result = "바위"; 
+		} 
+		else 
+		{ 
+			result = "보";  
+		} 
+		 
+		return result;  
+	} 
+			 
+	<input id='blank31' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(31)'> String judge( String playerA, String playerB )	 
+	{ 
+		String result = ""; 
+		if ( playerA.equals( playerB ) ) 
+		{ 
+			result = "플레이어 A와 플레이어 B가 비겼습니다"; 
+		} 
+		else if ( ( playerA.equals( "가위" ) && playerB.equals( "보" ) )  
+				|| ( playerA.equals( "바위" ) && playerB.equals( "가위" ) ) 
+				|| ( playerA.equals( "보" ) && playerB.equals( "바위" ) ) ) 
+		{ 
+			result = "플레이어 A가 이겼습니다"; 
+		} 
+		else 
+		{ 
+			result = "플레이어 B가 이겼습니다"; 
+		}	 
+		 
+		return result; 
+	} 
+} 
+ 
+<input id='blank32' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(32)'> <input id='blank33' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(33)'> RockPaperScissors_Main							 
+{ 
+	<input id='blank34' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(34)'> <input id='blank35' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(35)'> void RockPaperScissors_Main(String[] args) 	 
+	{ 
+		Scanner scan = new Scanner( System.in );	 
+		 
+		RockPaperScissors game =  
+		                         new RockPaperScissors(); 
+		String result =  
+		                game.play( scan ); 
+		         
+		System.out.println( result ); 
+		 
+		return; 
+	} 
+} 	 			</pre> 			</div> 		</div> 	</body> </html> 

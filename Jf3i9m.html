@@ -1,0 +1,55 @@
+<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script type="text/javascript" src="https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/J0309.js"></script> 		<script type="text/javascript" src="../reading/functions.js"></script> 		<link rel="stylesheet" href="../reading/layout.css"> 		<script> 			const d10 = [  							]; 		</script> 	</head> 	<body onload='f1();' onkeydown='f4()' oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> 			</div> 			<div id = "navigationBox"> 			</div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>하노이 탑에 첫번째 기둥에 있는 디스크를 세번째 기둥으로 모두 옮기는 문제입니다 이를 해결하는 다음 프로그램의 실행상태를 확인하세요 의 알고리즘을 한국어로 설명하세요.</pre> 				<pre class='selectable'>Move one disk from 1 to 3
+Move one disk from 1 to 2
+Move one disk from 3 to 2
+Move one disk from 1 to 3
+Move one disk from 2 to 1
+Move one disk from 2 to 3
+Move one disk from 1 to 3
+</pre><br> 	   				<h4>프로그램 코드</h4> 				<pre>		class TowerOfHanoi
+	{
+1		public void moveTower( int numDisks, int start, int temp, int end ) 
+		{
+2			if (numDisks == 1)
+3				moveOneDisk (start, end);	
+4			else
+			{
+5				moveTower( numDisks-1, start, end, temp );	
+6				moveOneDisk (start, end);	
+7				moveTower( numDisks-1, temp, start, end );	
+			}
+8		}
+9	   private void moveOneDisk (int start, int end ) 
+	   {
+10	      System.out.println ("Move one disk from " + start + " to " + end);
+	   }
+	}
+	
+	public class TowerOfHanoi_Main
+	{
+11	   public static void main (String[] args)
+	   {
+12	      TowerOfHanoi towers = new TowerOfHanoi();
+13	      towers.moveTower( 3, 1, 2, 3 ); 
+14		  return;
+	   }
+	}
+	</pre> 				<br>
+<h4>11 12 13와 9 10 7 1 2 3 9 사이의 실행순서(15개)를 쓰시오 및 실행상태</h4>
+<pre style='margin:0;padding:0;'>1		public void moveTower( int numDisks, int start, int temp, int end ) </pre> <br>그림번호 : <img src=./../../../../input/J/PT/img/JL11_PT01_1.png> <br>
+<pre style='margin:0;padding:0;'>2			if (numDisks == 1)</pre><br>
+<pre style='margin:0;padding:0;'>4			else</pre><br>
+<pre style='margin:0;padding:0;'>5				moveTower( numDisks-1, start, end, temp );	</pre><br>
+<pre style='margin:0;padding:0;'>1		public void moveTower( int numDisks, int start, int temp, int end ) </pre> <br>그림번호 : <img src=./../../../../input/J/PT/img/JL11_PT01_2.png> <br>
+<pre style='margin:0;padding:0;'>2			if (numDisks == 1)</pre><br>
+<pre style='margin:0;padding:0;'>4			else</pre><br>
+<pre style='margin:0;padding:0;'>5				moveTower( numDisks-1, start, end, temp );	</pre><br>
+<pre style='margin:0;padding:0;'>1		public void moveTower( int numDisks, int start, int temp, int end ) </pre> <br>그림번호 : <img src=./../../../../input/J/PT/img/JL11_PT01_3.png> <br>
+<pre style='margin:0;padding:0;'>2			if (numDisks == 1)</pre><br>
+<pre style='margin:0;padding:0;'>3				moveOneDisk (start, end);	</pre><br>
+<pre style='margin:0;padding:0;'>9	   private void moveOneDisk (int start, int end ) </pre> <br>그림번호 : <img src=./../../../../input/J/PT/img/JL11_PT01_4.png> <br>
+<pre style='margin:0;padding:0;'>10	      System.out.println ("Move one disk from " + start + " to " + end);</pre>
+<pre style='background-color:black; color:white; width:807px; margin:0; padding:0;'>Move one disk from 1 to 3<br></pre><br>
+<pre style='margin:0;padding:0;'>8		}</pre><br>
+<pre style='margin:0;padding:0;'>6				moveOneDisk (start, end);	</pre> <br>그림번호 : <img src=./../../../../input/J/PT/img/JL11_PT01_5.png> <br>
+<table border='1'><tr><td width='50' align='center'>1</td><td><br>&nbsp; <img src='https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/img/JL11_PT01_1.png' /><br>&nbsp;</td></tr> <tr><td width='50' align='center'>2</td><td><br>&nbsp; <img src='https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/img/JL11_PT01_2.png' /><br>&nbsp;</td></tr> <tr><td width='50' align='center'>3</td><td><br>&nbsp; <img src='https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/img/JL11_PT01_3.png' /><br>&nbsp;</td></tr> <tr><td width='50' align='center'>4</td><td><br>&nbsp; <img src='https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/img/JL11_PT01_4.png' /><br>&nbsp;</td></tr> <tr><td width='50' align='center'>5</td><td><br>&nbsp; <img src='https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/img/JL11_PT01_5.png' /><br>&nbsp;</td></tr> <tr><td width='50' align='center'>6</td><td><br>&nbsp; <img src='https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/img/JL11_PT01_6.png' /><br>&nbsp;</td></tr> <tr><td width='50' align='center'>7</td><td><br>&nbsp; <img src='https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/img/JL11_PT01_7.png' /><br>&nbsp;</td></tr> <tr><td width='50' align='center'>8</td><td><br>&nbsp; <img src='https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/img/JL11_PT01_8.png' /><br>&nbsp;</td></tr> <tr><td width='50' align='center'>9</td><td><br>&nbsp; <img src='https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/img/JL11_PT01_9.png' /><br>&nbsp;</td></tr> <tr><td width='50' align='center'>10</td><td><br>&nbsp; <img src='https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/img/JL11_PT01_10.png' /><br>&nbsp;</td></tr> <tr><td width='50' align='center'>11</td><td><br>&nbsp; <img src='https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/img/JL11_PT01_11.png' /><br>&nbsp;</td></tr> <tr><td width='50' align='center'>12</td><td><br>&nbsp; <img src='https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/img/JL11_PT01_12.png' /><br>&nbsp;</td></tr> <tr><td width='50' align='center'>13</td><td><br>&nbsp; <img src='https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/img/JL11_PT01_13.png' /><br>&nbsp;</td></tr> <tr><td width='50' align='center'>14</td><td><br>&nbsp; <img src='https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/img/JL11_PT01_14.png' /><br>&nbsp;</td></tr> <tr><td width='50' align='center'>15</td><td><br>&nbsp; <img src='https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/img/JL11_PT01_15.png' /><br>&nbsp;</td></tr> <tr><td width='50' align='center'>16</td><td><br>&nbsp; <img src='https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/img/JL11_PT01_16.png' /><br>&nbsp;</td></tr> <tr><td width='50' align='center'>17</td><td><br>&nbsp; <img src='https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/img/JL11_PT01_17.png' /><br>&nbsp;</td></tr> <tr><td width='50' align='center'>18</td><td><br>&nbsp; <img src='https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/img/JL11_PT01_18.png' /><br>&nbsp;</td></tr> <tr><td width='50' align='center'>19</td><td><br>&nbsp; <img src='https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/img/JL11_PT01_19.png' /><br>&nbsp;</td></tr> <tr><td width='50' align='center'>20</td><td><br>&nbsp; <img src='https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/img/JL11_PT01_20.png' /><br>&nbsp;</td></tr>
+</table> 			</div> 		</div> 	</body> </html> 
