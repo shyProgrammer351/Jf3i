@@ -1,4 +1,4 @@
-<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script type="text/javascript" src="https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/J0305.js"></script> 		<script type="text/javascript" src="../reading/functions.js"></script> 		<link rel="stylesheet" href="../reading/layout.css"> 		<script> 			const d10 = [  							]; 		</script> 	</head> 	<body onload='f1();' onkeydown='f4()' oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> 			</div> 			<div id = "navigationBox"> 			</div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>국민은행, 우리은행, 하나은행에서 통장을 만들어 각각 1000원, 2000원, 3000원을 입금 후 총 예금액을 출력하는 문제입니다 이를 해결하는 다음 프로그램의 실행상태를 확인하세요 </pre> 				<pre class='selectable'>국민은행 통장 : 1000원<b><font color='red'></font></b>
+<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7250753558435816" crossorigin="anonymous"></script> 		<link rel="stylesheet" href="../layout.css"> 		<script type="text/javascript" src="../functions.js"></script> 		<script> 			const d10 = [ ["2"], ["3"], ["4"], ["5"], 							]; 		</script> 	</head> 	<body oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> JAVA 프로그래밍 </div> 			<div id = "navigationBox"><ol><li><a href='../Jf1i/Jf1i1.html'>입출력/선택문</a></li><li><a href='../Jf2i/Jf2i1.html'>반복문/배열/예외</a></li><li><a href='../Jf3i/Jf3i1.html'>클래스와 객체/패키지</a></li><ul><li><a href='../Jf3i/Jf3i1.html'>TV 리모컨</a></li><li><a href='../Jf3i/Jf3i2.html'>구슬찾기</a></li><li><a href='../Jf3i/Jf3i3.html'>가위바위보</a></li><li><a href='../Jf3i/Jf3i4.html'>챗봇</a></li><li><a href='../Jf3i/Jf3i5.html'>통장</a></li><ul><li><a href='Jf3i5.html'>코드읽기</a></li><li><a href='Jf3i5a.html'>알고리즘</a></li><li><a href='Jf3i5k.html'>키워드</a></li><li><a href='Jf3i5b.html'>빈칸채우기</a></li><li><a href='Jf3i5s.html'>실행순서</a></li><li><a href='Jf3i5m.html'>실행상태</a></li><li><a href='./../../github_sourceCode/Chapter03/Bankbook_Main.java' target='_blank'>소스코드</a></li></ul><li><a href='../Jf3i/Jf3i6.html'>달력</a></li><li><a href='../Jf3i/Jf3i7.html'>합계 Σ 계산</a></li><li><a href='../Jf3i/Jf3i8.html'>곱 !(factorial) 계산</a></li><li><a href='../Jf3i/Jf3i9.html'>하노이 탑</a></li></ul><li><a href='../Jf4i/Jf4i1.html'>상속 및 다형성</a></li><li><a href='../Jf5i/Jf5i1.html'>GUI 기초</a></li><li><a href='../Jf6i/Jf6i1.html'>GUI 응용</a></li><li><a href='../Jf7i/Jf7i1.html'>제네릭/컬렉션/파일</a></li><li><a href='../Jf8i/Jf8i1.html'>스레드/네트워크(1:1)</a></li><li><a href='../Jf9i/Jf9i1.html'>네트워크(1:n)</a></li></ol></div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>국민은행, 우리은행, 하나은행에서 통장을 만들어 각각 1000원, 2000원, 3000원을 입금 후 총 예금액을 출력하는 문제입니다 이를 해결하는 다음 프로그램의 실행상태를 확인하세요 </pre> 				<pre class='selectable'>국민은행 통장 : 1000원<b><font color='red'></font></b>
 총 예금액 : 1000원
 우리은행 통장 : 2000원
 총 예금액 : 3000원
@@ -11,69 +11,73 @@
 		private int money;									
 		private static int totalMoney  = 0;	
 		
-1		public Bankbook( String id )
+<a href='javascript:history.back();' name='1'>1</a>		public Bankbook( String id )
 		{
 			this.id = id;
-2			this.money = 0;
+<a href='javascript:history.back();' name='2'>2</a>			this.money = 0;
 		}
 	
-3		public int deposit( int money )	 
+<a href='javascript:history.back();' name='3'>3</a>		public int deposit( int money )	 
 		{
 			this.money += money;
 			this.totalMoney += money;
-4			return this.money;
+<a href='javascript:history.back();' name='4'>4</a>			return this.money;
 		}
 	
-5		public String toString()	
+<a href='javascript:history.back();' name='5'>5</a>		public String toString()	
 		{
-6			return this.id + " : " + this.money + "원\n총 예금액 : " + totalMoney + "원";
+<a href='javascript:history.back();' name='6'>6</a>			return this.id + " : " + this.money + "원\n총 예금액 : " + totalMoney + "원";
 		}
 		
-7		public static int getTotalMoney()	
+<a href='javascript:history.back();' name='7'>7</a>		public static int getTotalMoney()	
 		{
-8			return totalMoney;
+<a href='javascript:history.back();' name='8'>8</a>			return totalMoney;
 		}
 	}
 	
 	public class Bankbook_Main
 	{
-9		public static void main (String[] args)	
+<a href='javascript:history.back();' name='9'>9</a>		public static void main (String[] args)	
 		{
 			Bankbook bankbook;
 	
-10			bankbook = 
-11			           new Bankbook ( "국민은행 통장" );
-12			bankbook.deposit( 1000 );
-13			System.out.println(
-14			                    bankbook ); 
+<a href='javascript:history.back();' name='10'>10</a>			bankbook = 
+<a href='javascript:history.back();' name='11'>11</a>			           new Bankbook ( "국민은행 통장" );
+<a href='javascript:history.back();' name='12'>12</a>			bankbook.deposit( 1000 );
+<a href='javascript:history.back();' name='13'>13</a>			System.out.println(
+<a href='javascript:history.back();' name='14'>14</a>			                    bankbook ); 
 	
-15			bankbook = 
-16			           new Bankbook ( "우리은행 통장" );
-17			bankbook.deposit( 2000 );
-18			System.out.println(
-19			                    bankbook );	 
+<a href='javascript:history.back();' name='15'>15</a>			bankbook = 
+<a href='javascript:history.back();' name='16'>16</a>			           new Bankbook ( "우리은행 통장" );
+<a href='javascript:history.back();' name='17'>17</a>			bankbook.deposit( 2000 );
+<a href='javascript:history.back();' name='18'>18</a>			System.out.println(
+<a href='javascript:history.back();' name='19'>19</a>			                    bankbook );	 
 	
-20			bankbook = 
-21			           new Bankbook ( "하나은행 통장" );
-22			bankbook.deposit( 3000 );
-23			System.out.println(
-24			                    bankbook ); 
+<a href='javascript:history.back();' name='20'>20</a>			bankbook = 
+<a href='javascript:history.back();' name='21'>21</a>			           new Bankbook ( "하나은행 통장" );
+<a href='javascript:history.back();' name='22'>22</a>			bankbook.deposit( 3000 );
+<a href='javascript:history.back();' name='23'>23</a>			System.out.println(
+<a href='javascript:history.back();' name='24'>24</a>			                    bankbook ); 
 	
-25			System.out.println( "(전체 총 예금액) " 
-26						+ Bankbook.getTotalMoney() + "원" ); 
+<a href='javascript:history.back();' name='25'>25</a>			System.out.println( "(전체 총 예금액) " 
+<a href='javascript:history.back();' name='26'>26</a>						+ Bankbook.getTotalMoney() + "원" ); 
 			
-27			return;
+<a href='javascript:history.back();' name='27'>27</a>			return;
 		}
 	}
 	</pre> 				<br>
-<h4>실행순서 3 4와 15 17 사이의 실행순서(7개)를 쓰시오 및 실행상태</h4>
-<pre style='margin:0;padding:0;'>14			                    bankbook ); </pre><br>
-<pre style='margin:0;padding:0;'>5		public String toString()	</pre><br>
-<pre style='margin:0;padding:0;'>6			return this.id + " : " + this.money + "원\n총 예금액 : " + totalMoney + "원";</pre><br>
-<pre style='margin:0;padding:0;'>13			System.out.println(</pre>
+<h4>국민은행 통장에 100원을 입금하는 실행순서 9와 16 1 2 사이의 실행순서(11)개를 쓰시오 및 실행상태</h4>
+<pre style='margin:0;padding:0;'><a href='#11'>11</a>			           new Bankbook ( "국민은행 통장" );</pre> <br>그림번호 : <input id='blank0' type='text' required minlength='1' maxlength='30' size='20' onchange='f6(0)'> <br> <br>
+<pre style='margin:0;padding:0;'><a href='#1'>1</a>		public Bankbook( String id )</pre><br>
+<pre style='margin:0;padding:0;'><a href='#2'>2</a>			this.money = 0;</pre> <br>그림번호 : <input id='blank1' type='text' required minlength='1' maxlength='30' size='20' onchange='f6(1)'> <br> <br>
+<pre style='margin:0;padding:0;'><a href='#10'>10</a>			bankbook = </pre> <br>그림번호 : <input id='blank2' type='text' required minlength='1' maxlength='30' size='20' onchange='f6(2)'> <br> <br>
+<pre style='margin:0;padding:0;'><a href='#12'>12</a>			bankbook.deposit( 1000 );</pre><br>
+<pre style='margin:0;padding:0;'><a href='#3'>3</a>		public int deposit( int money )	 </pre><br>
+<pre style='margin:0;padding:0;'><a href='#4'>4</a>			return this.money;</pre> <br>그림번호 : <input id='blank3' type='text' required minlength='1' maxlength='30' size='20' onchange='f6(3)'> <br> <br>
+<pre style='margin:0;padding:0;'><a href='#14'>14</a>			                    bankbook ); </pre><br>
+<pre style='margin:0;padding:0;'><a href='#5'>5</a>		public String toString()	</pre><br>
+<pre style='margin:0;padding:0;'><a href='#6'>6</a>			return this.id + " : " + this.money + "원\n총 예금액 : " + totalMoney + "원";</pre><br>
+<pre style='margin:0;padding:0;'><a href='#13'>13</a>			System.out.println(</pre>
 <pre style='background-color:black; color:white; width:807px; margin:0; padding:0;'>국민은행 통장 : 1000원<br>총 예금액 : 1000원<br></pre><br>
-<pre style='margin:0;padding:0;'>16			           new Bankbook ( "우리은행 통장" );</pre> <br>그림번호 : <img src='https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/img/JL03_PT05_006.jpg'> <br>
-<pre style='margin:0;padding:0;'>1		public Bankbook( String id )</pre><br>
-<pre style='margin:0;padding:0;'>2			this.money = 0;</pre> <br>그림번호 : <img src='https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/img/JL03_PT05_007.jpg'> <br>
 <table border='1'><tr><td width='50' align='center'>1</td><td><br>&nbsp; <img src='https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/img/JL03_PT05_001.jpg' /><br>&nbsp;</td></tr> <tr><td width='50' align='center'>2</td><td><br>&nbsp; <img src='https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/img/JL03_PT05_002.jpg' /><br>&nbsp;</td></tr> <tr><td width='50' align='center'>3</td><td><br>&nbsp; <img src='https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/img/JL03_PT05_003.jpg' /><br>&nbsp;</td></tr> <tr><td width='50' align='center'>4</td><td><br>&nbsp; <img src='https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/img/JL03_PT05_004.jpg' /><br>&nbsp;</td></tr> <tr><td width='50' align='center'>5</td><td><br>&nbsp; <img src='https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/img/JL03_PT05_005.jpg' /><br>&nbsp;</td></tr> <tr><td width='50' align='center'>6</td><td><br>&nbsp; <img src='https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/img/JL03_PT05_006.jpg' /><br>&nbsp;</td></tr> <tr><td width='50' align='center'>7</td><td><br>&nbsp; <img src='https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/img/JL03_PT05_007.jpg' /><br>&nbsp;</td></tr> <tr><td width='50' align='center'>8</td><td><br>&nbsp; <img src='https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/img/JL03_PT05_008.jpg' /><br>&nbsp;</td></tr> <tr><td width='50' align='center'>9</td><td><br>&nbsp; <img src='https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/img/JL03_PT05_009.jpg' /><br>&nbsp;</td></tr> <tr><td width='50' align='center'>10</td><td><br>&nbsp; <img src='https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/img/JL03_PT05_010.jpg' /><br>&nbsp;</td></tr> <tr><td width='50' align='center'>11</td><td><br>&nbsp; <img src='https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/img/JL03_PT05_011.jpg' /><br>&nbsp;</td></tr> <tr><td width='50' align='center'>12</td><td><br>&nbsp; <img src='https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/img/JL03_PT05_012.jpg' /><br>&nbsp;</td></tr> <tr><td width='50' align='center'>13</td><td><br>&nbsp; <img src='https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/img/JL03_PT05_013.jpg' /><br>&nbsp;</td></tr>
 </table> 			</div> 		</div> 	</body> </html> 

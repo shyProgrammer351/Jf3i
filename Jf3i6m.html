@@ -1,4 +1,4 @@
-<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script type="text/javascript" src="https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/J0306.js"></script> 		<script type="text/javascript" src="../reading/functions.js"></script> 		<link rel="stylesheet" href="../reading/layout.css"> 		<script> 			const d10 = [ ["getFirstDay"], ["getFirstDay"], ["getFirstDay"], ["getFirstDay"], ["31"], ["1"], 							]; 		</script> 	</head> 	<body onload='f1();' onkeydown='f4()' oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> 			</div> 			<div id = "navigationBox"> 			</div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>사용자가 년도와 달을 입력하면 달력을 출력하는 문제입니다 이를 해결하는 다음 프로그램의 실행상태를 확인하세요 </pre> 				<pre class='selectable'>년도를 입력하세요: <b><font color='red'>2020</font></b>
+<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7250753558435816" crossorigin="anonymous"></script> 		<link rel="stylesheet" href="../layout.css"> 		<script type="text/javascript" src="../functions.js"></script> 		<script> 			const d10 = [ ["getFirstDay"], ["getFirstDay"], ["6"], ["6"], 							]; 		</script> 	</head> 	<body oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> JAVA 프로그래밍 </div> 			<div id = "navigationBox"><ol><li><a href='../Jf1i/Jf1i1.html'>입출력/선택문</a></li><li><a href='../Jf2i/Jf2i1.html'>반복문/배열/예외</a></li><li><a href='../Jf3i/Jf3i1.html'>클래스와 객체/패키지</a></li><ul><li><a href='../Jf3i/Jf3i1.html'>TV 리모컨</a></li><li><a href='../Jf3i/Jf3i2.html'>구슬찾기</a></li><li><a href='../Jf3i/Jf3i3.html'>가위바위보</a></li><li><a href='../Jf3i/Jf3i4.html'>챗봇</a></li><li><a href='../Jf3i/Jf3i5.html'>통장</a></li><li><a href='../Jf3i/Jf3i6.html'>달력</a></li><ul><li><a href='Jf3i6.html'>코드읽기</a></li><li><a href='Jf3i6a.html'>알고리즘</a></li><li><a href='Jf3i6k.html'>키워드</a></li><li><a href='Jf3i6b.html'>빈칸채우기</a></li><li><a href='Jf3i6s.html'>실행순서</a></li><li><a href='Jf3i6m.html'>실행상태</a></li><li><a href='./../../github_sourceCode/Chapter03/Calendar_Main.java' target='_blank'>소스코드</a></li></ul><li><a href='../Jf3i/Jf3i7.html'>합계 Σ 계산</a></li><li><a href='../Jf3i/Jf3i8.html'>곱 !(factorial) 계산</a></li><li><a href='../Jf3i/Jf3i9.html'>하노이 탑</a></li></ul><li><a href='../Jf4i/Jf4i1.html'>상속 및 다형성</a></li><li><a href='../Jf5i/Jf5i1.html'>GUI 기초</a></li><li><a href='../Jf6i/Jf6i1.html'>GUI 응용</a></li><li><a href='../Jf7i/Jf7i1.html'>제네릭/컬렉션/파일</a></li><li><a href='../Jf8i/Jf8i1.html'>스레드/네트워크(1:1)</a></li><li><a href='../Jf9i/Jf9i1.html'>네트워크(1:n)</a></li></ol></div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>사용자가 년도와 달을 입력하면 달력을 출력하는 문제입니다 이를 해결하는 다음 프로그램의 실행상태를 확인하세요 </pre> 				<pre class='selectable'>년도를 입력하세요: <b><font color='red'>2020</font></b>
 월을 입력하세요: <b><font color='red'>2</font></b>
 	
               2020년 2월           
@@ -11,67 +11,38 @@
 		
 	class Calendar  
 	{
-		final int lastDayPerMonth[] = { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };  
-		
-C1b		private boolean IsLeapYear( int year )										
+<a href='javascript:history.back();' name='C1b'>C1b</a>		private boolean IsLeapYear( int year )										
 		{
 			if ( ( year % 400 ) == 0 )
-			{
 				return true;										
-			}
 			else if ( ( year % 100 ) == 0 )
-			{
 				return false;										
-			}
 			else if ( ( year % 4 ) == 0 )
-			{
-C11				return true;										
-			}
+<a href='javascript:history.back();' name='C11'>C11</a>				return true;										
 			else 
-			{
 				return false;										
-			}
-C1e		}
+<a href='javascript:history.back();' name='C1e'>C1e</a>		}
 		
-C2b		public int getLastDay( int month, int year )									
+<a href='javascript:history.back();' name='C2b'>C2b</a>		public int getLastDay( int month, int year )									
 		{
-C21			if ( ( month == 2 ) && 
-C22			                         IsLeapYear( year ) )
-			{
-C23				return lastDayPerMonth[ month ] + 1;							
-			}
+			final int lastDayPerMonth[] = { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };  
+		
+<a href='javascript:history.back();' name='C21'>C21</a>			if ( IsLeapYear( year )  
+<a href='javascript:history.back();' name='C22'>C22</a>			                        && ( month == 2 ) )
+<a href='javascript:history.back();' name='C23'>C23</a>				return lastDayPerMonth[ month ] + 1;							
 			else
-			{
 				return lastDayPerMonth[ month ]; 							
-			}
-C2e		}
-				
-C3b		private int getTotalDaysBetweenNewYearsDayAnd( int previousMonth, int thisYear )				
-		{
-			int totalDays = 0; 
-			int month = 0;
-			
-			for ( month = 1; month <= previousMonth; month++ )
-			{
-				totalDays += lastDayPerMonth[ month ];
-			}
-			if ( ( month >= 2 ) && IsLeapYear( thisYear ) )
-			{
-				totalDays++;
-			}
-	
-			return totalDays;										
-C3e		}
-		
-C4b		public int getFirstDay( int month, int year )							
+<a href='javascript:history.back();' name='C2e'>C2e</a>		}
+					
+<a href='javascript:history.back();' name='C3b'>C3b</a>		public int getFirstDay( int month, int year )							
 		{
 			int totalDays = (year-1)*365 + (year-1)/4 - (year-1)/100 + (year-1)/400;
-C41			totalDays +=  					 
-C42			            getTotalDaysBetweenNewYearsDayAnd( month-1, year );	
-			return ( (totalDays+1) % 7 );									
-C4e		}
+			for ( int idx = 1; idx < month; idx++ )
+				totalDays += getLastDay( idx, year );
+			return ( ( totalDays + 1 ) % 7 );									
+<a href='javascript:history.back();' name='C3e'>C3e</a>		}
 		
-C5b		public void print( int year, int month, int firstDay, int lastDay )				
+<a href='javascript:history.back();' name='C4b'>C4b</a>		public void print( int year, int month, int firstDay, int lastDay )				
 		{
 			int day = 0;
 			int dayOfWeek = 0;
@@ -95,16 +66,15 @@ C5b		public void print( int year, int month, int firstDay, int lastDay )
 					dayOfWeek = sunday - 1;
 				}
 			}
-C5e		}
+<a href='javascript:history.back();' name='C4e'>C4e</a>		}
 	}
 	
 	public class Calendar_Main 
 	{  
-M1b		public static void main(String args[]) 
+<a href='javascript:history.back();' name='M1b'>M1b</a>		public static void main(String args[]) 
 		{ 
 			Scanner scan = new Scanner( System.in );
 			Calendar calendar = new Calendar();
-			
 			int year  = 0;
 			int month  = 0;
 			int lastDay= 0;
@@ -114,19 +84,20 @@ M1b		public static void main(String args[])
 			year = scan.nextInt();
 			System.out.print( "월을 입력하세요: " );
 			month = scan.nextInt();
-M11			firstDay = 									 
-M12			          calendar.getFirstDay( month, year );
-M13			lastDay = 										 
-M14			          calendar.getLastDay( month, year );
+			
+<a href='javascript:history.back();' name='M11'>M11</a>			firstDay = 									 
+<a href='javascript:history.back();' name='M12'>M12</a>			          calendar.getFirstDay( month, year );
+<a href='javascript:history.back();' name='M13'>M13</a>			lastDay = 										 
+<a href='javascript:history.back();' name='M14'>M14</a>			          calendar.getLastDay( month, year );
 		
-M15			calendar.print( year, month, firstDay, lastDay );
+<a href='javascript:history.back();' name='M15'>M15</a>			calendar.print( year, month, firstDay, lastDay );
 		
-M1e		}
+<a href='javascript:history.back();' name='M1e'>M1e</a>		}
 	}
 	</pre> 				<br>
-<h4>M1b M12와 C41 C4e 사이의 실행순서(4개)를 쓰시오 및 실행상태</h4>
-<pre style='margin:0;padding:0;'>C4b		public int getFirstDay( int month, int year )							</pre> <table style="font-size:10pt; background:Silver; border:0px; border-spacing:0px; margin:0px;padding:0;"> <tbody id="value_table"> <tr></tr> <tr> <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:Silver; ">main() 함수</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">2020</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">year</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">2</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">month</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">0</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">firstDay</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">0</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">lastDay</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:Silver; "> <input id='blank0' type='text' required minlength='1' maxlength='30' size='20' onchange='f6(0)'>() 함수</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">2020</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">year</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">2</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">month</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">0</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">totalDays</td></tr> </tbody> </table> <br>
-<pre style='margin:0;padding:0;'>C42			            getTotalDaysBetweenNewYearsDayAnd( month-1, year );	</pre> <table style="font-size:10pt; background:Silver; border:0px; border-spacing:0px; margin:0px;padding:0;"> <tbody id="value_table"> <tr></tr> <tr> <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:Silver; ">main() 함수</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">2020</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">year</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">2</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">month</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">0</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">firstDay</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">0</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">lastDay</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:Silver; "> <input id='blank1' type='text' required minlength='1' maxlength='30' size='20' onchange='f6(1)'>() 함수</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">2020</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">year</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">2</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">month</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">737424</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">totalDays</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">0</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">firstDay</td></tr> </tbody> </table> <br>
-<pre style='margin:0;padding:0;'>C3b		private int getTotalDaysBetweenNewYearsDayAnd( int previousMonth, int thisYear )				</pre> <table style="font-size:10pt; background:Silver; border:0px; border-spacing:0px; margin:0px;padding:0;"> <tbody id="value_table"> <tr></tr> <tr> <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:Silver; ">main() 함수</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">2020</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">year</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">2</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">month</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">0</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">firstDay</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">0</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">lastDay</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:Silver; "> <input id='blank2' type='text' required minlength='1' maxlength='30' size='20' onchange='f6(2)'>() 함수</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">2020</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">year</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">2</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">month</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">737424</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">totalDays</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">0</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">firstDay</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:Silver; ">getTotalDaysBetweenNewYearsDayAnd</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">2020</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">thisYear</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">1 = 2-1</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">previousMonth</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">0</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">totalDays</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">0</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">month</td></tr> </tbody> </table> <br>
-<pre style='margin:0;padding:0;'>C3e		}</pre> <table style="font-size:10pt; background:Silver; border:0px; border-spacing:0px; margin:0px;padding:0;"> <tbody id="value_table"> <tr></tr> <tr> <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:Silver; ">main() 함수</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">2020</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">year</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">2</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">month</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">0</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">firstDay</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">0</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">lastDay</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:Silver; "> <input id='blank3' type='text' required minlength='1' maxlength='30' size='20' onchange='f6(3)'>() 함수</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">2020</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">year</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">2</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">month</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">737424</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">totalDays</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">0</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">firstDay</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:Silver; ">getTotalDaysBetweenNewYearsDayAnd</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">2020</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">thisYear</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">1</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">previousMonth</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;"> <input id='blank4' type='text' required minlength='1' maxlength='30' size='20' onchange='f6(4)'> &nbsp; <del>0</del></td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">totalDays</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;"> <input id='blank5' type='text' required minlength='1' maxlength='30' size='20' onchange='f6(5)'> &nbsp; <del>0</del></td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">month</td></tr> </tbody> </table> <br>
+<h4>M1b M12와 C41 C3e 사이의 실행순서(4개)를 쓰시오 및 실행상태</h4>
+<pre style='margin:0;padding:0;'><a href='#C3b'>C3b</a>		public int getFirstDay( int month, int year )							</pre> <table style="font-size:10pt; background:Silver; border:0px; border-spacing:0px; margin:0px;padding:0;"> <tbody id="value_table"> <tr></tr> <tr> <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:Silver; ">main() 함수</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">2020</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">year</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">2</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">month</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">0</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">firstDay</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">0</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">lastDay</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:Silver; "> <input id='blank0' type='text' required minlength='1' maxlength='30' size='20' onchange='f6(0)'>() 함수</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">2020</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">year</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">2</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">month</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">0</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">totalDays</td></tr> </tbody> </table> <br>
+<pre style='margin:0;padding:0;'><a href='#C3e'>C3e</a>		}</pre> <table style="font-size:10pt; background:Silver; border:0px; border-spacing:0px; margin:0px;padding:0;"> <tbody id="value_table"> <tr></tr> <tr> <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:Silver; ">main() 함수</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">2020</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">year</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">2</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">month</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">0</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">firstDay</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">0</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">lastDay</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:Silver; "> <input id='blank1' type='text' required minlength='1' maxlength='30' size='20' onchange='f6(1)'>() 함수</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">2020</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">year</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">2</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">month</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">737455</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">totalDays</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;"> <input id='blank2' type='text' required minlength='1' maxlength='30' size='20' onchange='f6(2)'> &nbsp; <del>0</del></td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">반환값</td></tr> </tbody> </table> <br>
+<pre style='margin:0;padding:0;'><a href='#M11'>M11</a>			firstDay = 									 </pre> <table style="font-size:10pt; background:Silver; border:0px; border-spacing:0px; margin:0px;padding:0;"> <tbody id="value_table"> <tr></tr> <tr> <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:Silver; ">main() 함수</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">2020</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">year</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">2</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">month</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;"> <input id='blank3' type='text' required minlength='1' maxlength='30' size='20' onchange='f6(3)'> &nbsp; <del>0</del></td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">firstDay</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">0</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">lastDay</td></tr> </tbody> </table> <br>
+<pre style='margin:0;padding:0;'><a href='#M14'>M14</a>			          calendar.getLastDay( month, year );</pre> <table style="font-size:10pt; background:Silver; border:0px; border-spacing:0px; margin:0px;padding:0;"> <tbody id="value_table"> <tr></tr> <tr> <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:Silver; ">main() 함수</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">2020</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">year</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">2</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">month</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">6</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">firstDay</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">0</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid SkyBlue; background:SkyBlue;">lastDay</td></tr> </tbody> </table> <br>
 <table border='1'></table> 			</div> 		</div> 	</body> </html> 
