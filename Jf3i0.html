@@ -8,12 +8,789 @@
 	<body oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false">
 		<div id = "container">
 			<div id = "titleBox"> JAVA 프로그래밍 </div>
-			<div id = "navigationBox"><ol start=0><li><a href='../Jf0i/Jf0i0.html'>JAVA 프로그래밍 시작</a></li><ul></ul><li><a href='../Jf1i/Jf1i0.html'>출력</a></li><li><a href='../Jf2i/Jf2i0.html'>입력</a></li><li><a href='../Jf3i/Jf3i0.html'>변수</a></li><li><a href='../Jf4i/Jf4i0.html'>연산자</a></li><li><a href='../Jf5i/Jf5i0.html'>선택문(삼항연산자/switch)</a></li><li><a href='../Jf6i/Jf6i0.html'>선택문(if)</a></li><li><a href='../Jf7i/Jf7i0.html'>반복문(while)</a></li><li><a href='../Jf8i/Jf8i0.html'>반복문(for)</a></li><li><a href='../Jf9i/Jf9i0.html'>배열</a></li><li><a href='../Jg0i/Jg0i0.html'>문자열/컬렉션</a></li><li><a href='../Jg1i/Jg1i0.html'>클래스/패키지</a></li><li><a href='../Jg2i/Jg2i0.html'>상속/다형성</a></li><li><a href='../Jg3i/Jg3i0.html'>GUI기초</a></li><li><a href='../Jg4i/Jg4i0.html'>GUI응용</a></li><li><a href='../Jg5i/Jg5i0.html'>예외/쓰레드</a></li><li><a href='../Jg6i/Jg6i0.html'>파일입출력</a></li><li><a href='../Jg7i/Jg7i0.html'>네트워크(1:1)</a></li><li><a href='../Jg8i/Jg8i0.html'>네트워크(1:n)</a></li><li><a href='../Jg9i/Jg9i0.html'>열거형/제네릭</a></li><li><a href='../Jh0i/Jh0i0.html'>재귀함수</a></li></ol></div> 
+			<div id = "navigationBox"><ol start=0><li><a href='../Jf0i/Jf0i0.html'>JAVA 프로그래밍 시작</a></li><li><a href='../Jf1i/Jf1i0.html'>출력</a></li><li><a href='../Jf2i/Jf2i0.html'>입력</a></li><li><a href='../Jf3i/Jf3i0.html'>변수</a></li><ul><li><a href='../Jf3i/Jf3i1.html'>overflow/underflow</a></li><li><a href='../Jf3i/Jf3i2.html'>소문자 대문자 변환</a></li><li><a href='../Jf3i/Jf3i3.html'>점수 평균 계산</a></li><li><a href='../Jf3i/Jf3i4.html'>10진수 2진수 변환</a></li><li><a href='../Jf3i/Jf3i5.html'>참조자료형 변수</a></li></ul><li><a href='../Jf4i/Jf4i0.html'>연산자</a></li><li><a href='../Jf5i/Jf5i0.html'>선택문(삼항연산자/switch)</a></li><li><a href='../Jf6i/Jf6i0.html'>선택문(if)</a></li><li><a href='../Jf7i/Jf7i0.html'>반복문(while)</a></li><li><a href='../Jf8i/Jf8i0.html'>반복문(for)</a></li><li><a href='../Jf9i/Jf9i0.html'>배열</a></li><li><a href='../Jg0i/Jg0i0.html'>문자열/컬렉션</a></li><li><a href='../Jg1i/Jg1i0.html'>클래스/패키지</a></li><li><a href='../Jg2i/Jg2i0.html'>상속/다형성</a></li><li><a href='../Jg3i/Jg3i0.html'>GUI기초</a></li><li><a href='../Jg4i/Jg4i0.html'>GUI응용</a></li><li><a href='../Jg5i/Jg5i0.html'>예외/쓰레드</a></li><li><a href='../Jg6i/Jg6i0.html'>파일입출력</a></li><li><a href='../Jg7i/Jg7i0.html'>네트워크(1:1)</a></li><li><a href='../Jg8i/Jg8i0.html'>네트워크(1:n)</a></li><li><a href='../Jg9i/Jg9i0.html'>열거형/제네릭</a></li><li><a href='../Jh0i/Jh0i0.html'>재귀함수</a></li></ol></div> 
 			<div id = "contentBox">
-				<h3> </h3>
-<br>준비중입니다 
+				<h3>3. 변수</h3>
+<br>
+<span style='color:red;'>자료형</span> &nbsp; 변수의 메모리 공간의 특징을 표현
+<br>
+<br><span style='color:red;'>변수</span> &nbsp; <span style ='border:1px solid #000000; padding:3px;'> 변수값 </span>은 메모리 공간 <span style ='border:1px solid #000000; padding:3px;'> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span>과 변수값으로 구분되고, 변수값은 다양한 값으로 변경 가능
+<br><br>예)  
+<span style ='border:1px solid #000000; padding:3px;'>&nbsp;12 </span>&nbsp;=&nbsp;<span style ='border:1px solid #000000; padding:3px;'>&nbsp;5 </span>&nbsp;+&nbsp;<span style ='border:1px solid #000000; padding:3px;'>&nbsp;7&nbsp;</span>
+에서 왼쪽 변수는 연산결과를 저장할 공간을 나타내고, 오른쪽 변수는 변수값을 의미 
+<br>
+<br><span style='color:red;'>final</span> &nbsp; 변수 공간에 변하지 않는 상수값을 저장한다고 선언하는 키워드
+<br>
+<br><span style='color:red;'>기본자료형</span> &nbsp; 변수의 메모리공간에 변수값을 저장하는 자료형
+<br><br>
+<table style="font-size:8pt; background:white; border:0px; border-spacing:0px; margin:0px;padding:0;"> 
+<tbody id="value_table"> 
+   <tr> 
+      <td style = "margin:0px;padding:0;text-align:right; border:5px solid SkyBlue; background:SkyBlue;"> &nbsp; &nbsp; var </td> 
+      <td style = "margin:0px;padding:0;text-align:center; border:5px solid SkyBlue; background:white;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 100 &nbsp; &nbsp; &nbsp; &nbsp; </td> 
+   </tr> 
+</tbody> 
+</table>
+
+<br><span style='color:red;'>참조자료형</span> &nbsp; 변수의 메모리공간에 객체의 주소를 저장하는 자료형
+<br><br>
+<table style="font-size:8pt; background:white; border:0px; border-spacing:0px; margin:0px;padding:0;"> 
+<tbody id="value_table"> 
+   <tr> 
+      <td style = "margin:0px;padding:0;text-align:right; border:5px solid SkyBlue; background:SkyBlue;"> &nbsp; &nbsp; var </td> 
+      <td style = "margin:0px;padding:0;text-align:center; border:5px solid SkyBlue; background:white;"> &nbsp; (Integer객체01) &nbsp; </td> 
+      <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:white; "> &nbsp; &nbsp; </td> 
+      <td style = "margin:0px;padding:0;text-align:right; border:5px solid MediumSeaGreen; background:MediumSeaGreen;">(Integer객체01)</td> 
+      <td style = "margin:0px;padding:0;text-align:center; border:5px solid MediumSeaGreen; background:white;"> &nbsp; 100 &nbsp; </td> 
+      <td style = "margin:0px;padding:0;text-align:left; border:5px solid MediumSeaGreen; background:MediumSeaGreen;">등의 데이터와 메서드 포함</td>
+   </tr> 
+</tbody> 
+</table>
+<br><br>
+
+<h4>1) 기본 자료형</h4>
+<table style='width:790px; margin:0; padding:10px; text-align:center; border:1px solid #bcbcbc; font-size: 15px;'>
+	<tr style='background-color:silver;'><td style='width:100px;'> 구분 </td><td> 자료형 </td> <td> 메모리 공간 크기 <br> (byte) </td><td> 저장 가능 범위 </td><td> 유효자릿수 <br> (정밀도) </td></tr>
+	<tr><td> 논리형 </td><td> boolean        </td> <td> 1 </td><td> true, false </td></tr>
+	<tr><td> 정수형 </td><td> byte           </td> <td> 1 </td><td> -128 ~ +127 </td></tr>
+	<tr><td>      </td><td> short          </td> <td> 2 </td><td> -32,768 ~ +32,767 </td></tr>
+	<tr><td>      </td><td> int            </td> <td> 4 </td><td> -2,147,483,648 ~ +2,147,483,647 </td></tr>
+	<tr><td>      </td><td> long           </td> <td> 8 </td><td> -9,223,372,036,854,775,808 ~ +9,223,372,036,854,775,807 </td></tr>
+	<tr><td> 실수형 </td><td> float          </td> <td> 4 </td><td> ±3.4 × 10<sup>-38</sup> ~ ±3.4 × 10<sup>38</sup> &nbsp; </td><td>약 6자리</td></tr>
+	<tr><td>      </td><td> double         </td> <td> 8 </td><td> ±1.7 × 10<sup>-308</sup> ~ ±1.7 × 10<sup>308</sup>&nbsp;&nbsp;</td><td>약 15자리</td></tr>
+	<tr><td> 문자형 </td><td> char           </td> <td> 2 </td><td> &nbsp; &nbsp; &nbsp; &nbsp; 0 ~ +65,535 </td></tr>
+</table>
 
 
+<br><span style='color:red;'>boolean</span> &nbsp; true, false의 논리값을 가지는 자료형 
+<br>
+<br><span style='color:red;'>short, int, long</span> &nbsp; 정수를 표현하는 기본자료형으로 첫비트는 부호를 표현하고, 나머지 비트에서 숫자를 표현
+<br><br>
+<b>0과 양의 정수를 이진수로 표현하기</b>
+<br><br>
+10진수 5413<sub>10</sub> = 5 * 10<sup>3</sup> &nbsp;+&nbsp; 4 * 10<sup>2</sup> &nbsp;+&nbsp; 1 * 10<sup>1</sup> &nbsp;+&nbsp; 3 * 10<sup>0</sup> = 5 * 1000 &nbsp;+&nbsp; 4 * 100 &nbsp;+&nbsp; 1 * 10 &nbsp;+&nbsp; 3 * 1
+<br>2진수 ABCD<sub>2</sub> = A * 2<sup>3</sup> &nbsp;+&nbsp; B * 2<sup>2</sup> &nbsp;+&nbsp; C * 2<sup>1</sup> &nbsp;+&nbsp; D * 2<sup>0</sup> = A * 8 &nbsp;+&nbsp; B * 4 &nbsp;+&nbsp; C * 2 &nbsp;+&nbsp; D * 1
+
+<br><br>
+<table>
+	<tr style='font-size:14px;'>
+		<td style='text-align:right;'>15<sub>10</sub>=</td>
+		<td></td>
+		<td>1111<sub>2</sub></td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td style='text-align:right;'>0<sub>10</sub> =</td>
+		<td></td>
+		<td>0000<sub>2</sub></td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td style='text-align:right;'>10<sub>10</sub>=</td>
+		<td></td>
+		<td>1010<sub>2</sub></td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td style='text-align:right;'>6<sub>10</sub> =</td>
+		<td></td>
+		<td>0110<sub>2</sub></td>
+	</tr>
+	<tr style='font-size: 4px; vertical-align:center; text-align:center; font-family:monospace;line-height:2;'>
+		<td style='width:20px; margin:0; padding:10px; border:1px solid #bcbcbc;'>
+			&nbsp;● &nbsp; ● <br> &nbsp;● &nbsp; ● <br> &nbsp;● &nbsp; ● <br> &nbsp;● &nbsp; ● 
+		</td>
+		<td> &nbsp; </td>
+		<td style='width:20px; margin:0; padding:10px; border:1px solid #bcbcbc;'>
+			&nbsp;● &nbsp; ● <br> &nbsp;● &nbsp; ●  
+		</td>
+		<td> &nbsp; </td>
+		<td style='width:20px; margin:0; padding:10px; border:1px solid #bcbcbc;'>
+			● <br> ● 
+		</td>
+		<td> &nbsp; </td>
+		<td style='width:20px; margin:0; padding:10px; border:1px solid #bcbcbc;'>
+			&nbsp;●&nbsp;
+		</td>
+		<td> </td>
+		<td style='width:20px; margin:0; padding:10px; border:1px solid #bcbcbc;'>
+			&nbsp;
+		</td>
+		<td> &nbsp; </td>
+		<td style='width:20px; margin:0; padding:10px; border:1px solid #bcbcbc;'>
+			&nbsp;
+		</td>
+		<td> &nbsp; </td>
+		<td style='width:20px; margin:0; padding:10px; border:1px solid #bcbcbc;'>
+			&nbsp;
+		</td>
+		<td> &nbsp; </td>
+		<td style='width:20px; margin:0; padding:10px; border:1px solid #bcbcbc;'>
+			&nbsp;
+		</td>
+		<td> </td>
+		<td style='width:20px; margin:0; padding:10px; border:1px solid #bcbcbc;'>
+			&nbsp;● &nbsp; ● <br> &nbsp;● &nbsp; ● <br> &nbsp;● &nbsp; ● <br> &nbsp;● &nbsp; ● 
+		</td>
+		<td> &nbsp; </td>
+		<td style='width:20px; margin:0; padding:10px; border:1px solid #bcbcbc;'>
+			&nbsp;
+		</td>
+		<td> &nbsp; </td>
+		<td style='width:20px; margin:0; padding:10px; border:1px solid #bcbcbc;'>
+			● <br> ● 
+		</td>
+		<td> &nbsp; </td>
+		<td style='width:20px; margin:0; padding:10px; border:1px solid #bcbcbc;'>
+			&nbsp;
+		</td>
+		<td> &nbsp; </td>
+		<td style='width:20px; margin:0; padding:10px; border:1px solid #bcbcbc;'>
+			&nbsp;
+		</td>
+		<td> </td>
+		<td style='width:20px; margin:0; padding:10px; border:1px solid #bcbcbc;'>
+			&nbsp;● &nbsp; ● <br> &nbsp;● &nbsp; ●  
+		</td>
+		<td> &nbsp; </td>
+		<td style='width:20px; margin:0; padding:10px; border:1px solid #bcbcbc;'>
+			● <br> ● 
+		</td>
+		<td> &nbsp; </td>
+		<td style='width:20px; margin:0; padding:10px; border:1px solid #bcbcbc;'>
+			&nbsp;
+		</td>
+	</tr>
+	<tr style='text-align:center;'>
+		<td>A</td><td></td><td>B</td><td></td><td>C</td><td></td><td>D</td><td></td>
+		<td>A</td><td></td><td>B</td><td></td><td>C</td><td></td><td>D</td><td></td>
+		<td>A</td><td></td><td>B</td><td></td><td>C</td><td></td><td>D</td><td></td>
+		<td>A</td><td></td><td>B</td><td></td><td>C</td><td></td><td>D</td><td></td>
+	</tr>
+</table>
+<br>
+<b>음의 정수를 이진수로 표현하기</b>
+<br><br>
+<table style='text-align:right;line-height:2.5;'>
+	<tr>
+		<td>
+			3 &nbsp; 
+			<br> + &nbsp; -3 &nbsp; 
+			<br><hr style='border:solid 1px black;'>
+			0 &nbsp; 
+		</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0 </span>
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 1 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 1&nbsp;</span>
+      <br>+
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 1 </span>
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 1 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 1&nbsp;</span>
+			<br><hr style='border:solid 1px black;'>
+      <span style ='border:1px solid silver; color:silver; padding:3px;'>&nbsp;1 </span>
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0 </span>
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0&nbsp;</span>
+		</td>
+		<td>
+			&nbsp; &nbsp; &nbsp; 
+		</td>
+		<td>
+			1 &nbsp; 
+			<br> + &nbsp; -1 &nbsp; 
+			<br><hr style='border:solid 1px black;'>
+			0 &nbsp; 
+		</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0 </span>
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 1&nbsp;</span>
+      <br>+
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 1 </span>
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 1 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 1 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 1&nbsp;</span>
+			<br><hr style='border:solid 1px black;'>
+			<span style ='border:1px solid silver; color:silver; padding:3px;'>&nbsp;1 </span>
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0 </span>
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0&nbsp;</span>
+		</td>
+		<td>
+			&nbsp; &nbsp; &nbsp; 
+		</td>
+		<td>
+			15 &nbsp; 
+			<br> + &nbsp; -15 &nbsp; 
+			<br><hr style='border:solid 1px black;'>
+			0 &nbsp; 
+		</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 1 </span>
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 1 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 1 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 1&nbsp;</span>
+      <br>+
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0 </span>
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 1&nbsp;</span>
+			<br><hr style='border:solid 1px black;'>
+      <span style ='border:1px solid silver; color:silver; padding:3px;'>&nbsp;1 </span>
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0 </span>
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0&nbsp;</span>
+		</td>
+	</tr>
+</table>
+<br>※ -1<sub>10</sub> = 1111<sub>2</sub> = 15<sub>10</sub>이고 -15<sub>10</sub> = 0001<sub>2</sub> = 1<sub>10</sub>인 
+문제를 해결하기 위해서, +/- 부호를 표현하는 비트 필요 
+<br><br>
+<b>정수를 이진수로 표현하기</b>
+<br><br> 첫번째 비트는 +/- 부호를 표현하고, 나머지 비트에서 숫자를 표현하여 -8부터 +7까지 표현가능
+<br><br>
+&nbsp;0<sub>10</sub> = 
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0 </span>
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0&nbsp;</span><sub>2</sub>
+&nbsp;
+&nbsp;1<sub>10</sub> = 
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0 </span>
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 1&nbsp;</span><sub>2</sub>
+&nbsp;
+&nbsp;7<sub>10</sub> = 
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0 </span>
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 1 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 1 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 1&nbsp;</span><sub>2</sub>
+
+<br><br>
+-8<sub>10</sub> = 
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 1 </span>
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0&nbsp;</span><sub>2</sub>
+&nbsp;
+-1<sub>10</sub> = 
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 1 </span>
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 1 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 1 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 1&nbsp;</span><sub>2</sub>
+&nbsp;
+-7<sub>10</sub> = 
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 1 </span>
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 1&nbsp;</span><sub>2</sub>
+
+<br><br><span id='2' style='color:red;'>overflow</span> &nbsp; 최대값 + 1은 변수 공간의 저장 가능 범위를 벗어나므로 계산결과 오류 발생!
+<br>
+<br><span style='color:red;'>underflow</span> &nbsp; 최소값 - 1은 변수 공간의 저장 가능 범위를 벗어나므로 계산결과 오류 발생!
+<br><br>
+<table style='text-align:right;line-height:2.5;'>
+	<tr>
+		<td>
+			7 &nbsp; 
+			<br> + &nbsp; 1 &nbsp; 
+			<br><hr style='border:solid 1px black;'>
+			overflow -8 &nbsp; 
+		</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0 </span>
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 1 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 1 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 1&nbsp;</span>
+      <br> &nbsp; +
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0 </span>
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 1&nbsp;</span>
+			<br><hr style='border:solid 1px black;'>
+			<span style ='border:1px solid #000000; padding:3px;'>&nbsp;1 </span>
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0&nbsp;</span>
+		</td>
+		<td>
+			&nbsp; &nbsp; &nbsp; 
+		</td>
+		<td>
+			-8 &nbsp; 
+			<br> + &nbsp; -1 &nbsp; 
+			<br><hr style='border:solid 1px black;'>
+			underflow 7 &nbsp; 
+		</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 1 </span>
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0&nbsp;</span>
+      <br>+
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 1 </span>
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 1 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 1 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 1&nbsp;</span>
+			<br><hr style='border:solid 1px black;'>
+      <span style ='border:1px solid silver; color:silver; padding:3px;'>&nbsp;1 </span>
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 0 </span>
+			&nbsp;<span style ='border:1px solid #000000; padding:3px;'> 1 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 1 </span>
+      &nbsp;<span style ='border:1px solid #000000; padding:3px;'> 1&nbsp;</span>
+		</td>
+		<td>
+			&nbsp; &nbsp; &nbsp; 
+		</td>
+	</tr>
+</table>
+<br><span style='color:red;'>float, double</span> &nbsp; 3.141 등의 실수를 ±가수×10<sup>지수</sup>처럼 표현하고, 변수는 부호부, 가수부, 지수부로 나누어 저장
+<br><br>
+<table style='line-height:2;'>
+	<tr><td style='text-align:right;' > -14 </td><td> = </td> <td> <span style ='border:1px solid #000000; padding:3px;'>&nbsp;-1.4 × 10<sup>1</sup>  &nbsp; </span> </td></tr>
+	<tr><td style='text-align:right;' > 14,000,000,000,000,000,000,000 </td><td> = </td> <td> <span style ='border:1px solid #000000; padding:3px;'> +1.4 × 10<sup>22&nbsp;</sup> </span> </td></tr>
+	<tr><td style='text-align:right;' > 0.000000000000000000000014 </td><td> = </td> <td> <span style ='border:1px solid #000000; padding:3px;'> +1.4 × 10<sup>-23</sup> </span> </td></tr>
+</table>
+<br>
+<span style='color:red;'>char</span> &nbsp; '0'(48), '1'(49), ..., 'a'(97), 'b'(98), … , '가'(44,032), …의 Unicode처럼 1글자 문자를 숫자에 대응시켜서 표현 
+<br><br>
+<table style='width:790px; margin:0; padding:10px; border:1px solid #bcbcbc; font-size: 15px;'>
+	<tr style='background-color:silver; text-align:center;'>
+		<td>
+			단어 
+		</td>
+		<td>
+			십진수
+		</td>
+		<td>
+			이진수 
+		</td>
+	</tr>
+	<tr>
+		<td style='padding-left:20px;'>
+			cat 
+		</td>
+		<td style='padding-left:20px;'>
+			&nbsp;&nbsp;99&nbsp;&nbsp;97 116
+		</td>
+		<td style='padding-left:20px;'>
+			0000000001000011 0000000001000001 0000000001110100
+		</td>
+	</tr>
+	<tr>
+		<td style='padding-left:20px;'>
+			dog 
+		</td>
+		<td style='padding-left:20px;'>
+			100 111 103
+		</td>
+		<td style='padding-left:20px;'>
+			0000000001100100 0000000001101111 0000000001100111
+		</td>
+	</tr>
+	<tr>
+		<td style='padding-left:20px;'>
+			123 
+		</td>
+		<td style='padding-left:20px;'>
+			&nbsp;&nbsp;49&nbsp;&nbsp;50&nbsp;&nbsp;51
+		</td>
+		<td style='padding-left:20px;'>
+			0000000000110001 0000000000110010 0000000000110011
+		</td>
+	</tr>
+</table>
+<br>
+<span style='color:red;'>'</span> &nbsp; 문자의 시작 또는 끝을 표현 &nbsp; 예) 'H', 'e', '!'
+<br>
+<br><span style='color:red;'>"</span> &nbsp; 문자열의 시작 또는 끝을 표현 &nbsp; 예) "cat", "123" 
+<br>
+<br><span style='color:red;'>자동형변환</span> &nbsp; 자료형마다 저장방식이 다르므로, 이항연산이 가능하도록 시스템에서 자동으로 자료형을 변환
+<br>예) 10.0 / 4 = 10.0 / 4.0 = 0.25, int pi = 3.141592 = 3, char alphbet = 97 = 'a' 
+<br>
+<br><span style='color:red;'>강제형변환</span> &nbsp; 프로그래머가 명시적으로 자료형을 변환
+<br>
+<br><span style='color:red;'>(double)</span> &nbsp; 값의 자료형을 강제로 실수 자료형으로 형변환
+<br>예) 10 / 3 = 3이지만, ((double)10) / 3 = 3.333333
+<br>
+<br><span style='color:red;'>(int)</span> &nbsp; 값의 자료형을 강제로 정수 자료형으로 형변환
+<br>예) (int)3.14 = 3 또는 (int)'A' = 65
+<br>
+<br><span style='color:red;'>(char)</span> &nbsp; 값의 자료형을 강제로 문자 자료형으로 형변환
+<br>예) (char)65 = 'A' 또는 (char)97 = 'a'
+<br>
+<br><br>
+
+<h4>2) 참조 자료형</h4>
+
+<span style='color:red;'>String</span> &nbsp; "apple", "banana" 등을 표현하는 문자열 클래스
+<br>
+<br><span style='color:red;'>new</span> &nbsp; 클래스 객체를 메모리에 생성
+<br>
+<br><span style='color:red;'>toString</span> &nbsp; 해당 클래스 객체를 문자열로 변환하는 메서드
+<br>
+<br><span style='color:red;'>null</span> &nbsp; 클래스 객체가 없음
+<br>
+
+<br><span style='color:red;'>wrapper class</span> &nbsp; 기본자료형 데이터를 객체로 다루기 위한 클래스 
+<br><br>
+
+<table style='width:790px; margin:0px; padding:10px; border:1px solid #bcbcbc; font-size: 15px;'>
+	<tr style='background-color:silver; text-align:center;'><td> 기본<br>자료형 </td> <td> WrapperClass </td><td> 문자열을 기본자료형으로 변환 예제 </td><td> 기본자료형를 문자열로 변환 예제 </td></tr>
+	<tr style='height:30px;'><td style='text-align:center;'>boolean</td><td style='text-align:center;'>Boolean   </td><td> boolean var1=Boolean.parseBoolean("true"); </td><td>String str1=new Boolean( false ).toString();</td></tr>
+	<tr style='height:30px;'><td style='text-align:center;'>byte   </td><td style='text-align:center;'>Byte      </td><td> byte var2 = Byte.parseByte( "45" );        </td><td>String str2=new Byte( (byte)45 ).toString();</td></tr>
+	<tr style='height:30px;'><td style='text-align:center;'>short  </td><td style='text-align:center;'>Short     </td><td> short var3 = Short.parseShort( "136" );    </td><td>String str3=new Short((short)136).toString(); </td></tr>
+	<tr style='height:30px;'><td style='text-align:center;'>int    </td><td style='text-align:center;'>Integer   </td><td> int var4 = Integer.parseInt( "217" );      </td><td>String str4=new Integer( 217 ).toString();</td></tr>
+	<tr style='height:30px;'><td style='text-align:center;'>long   </td><td style='text-align:center;'>Long      </td><td> long var5 = Long.parseLong( "652" );       </td><td>String str5=new Long( 652 ).toString(); </td></tr>
+	<tr style='height:30px;'><td style='text-align:center;'>float  </td><td style='text-align:center;'>Float     </td><td> float var6 = Float.parseFloat( "3.14" );   </td><td>String str6=new Float((float)3.14).toString(); </td></tr>
+	<tr style='height:30px;'><td style='text-align:center;'>double </td><td style='text-align:center;'>Double    </td><td> double var7 = Double.parseDouble("3.14");  </td><td>String str7=new Double( 3.14 ).toString();</td></tr>
+	<tr style='height:30px;'><td style='text-align:center;'>char   </td><td style='text-align:center;'>Character </td><td> char var8 = new String("가").charAt(0);     </td><td>String str8=new Character( '가' ).toString();</td></tr>
+</table>
+<br><span style='color:red;'>autoboxing</span> &nbsp; 기본자료형 데이터를 wrapper class 객체로 자동형변환
+<br>
+<br><span style='color:red;'>unboxing</span> &nbsp; wrapper class 객체를 기본자료형 데이터로 자동형변환
+<br>
+<br>
+<table style='width:790px; margin:0; padding:0px; border:1px solid #bcbcbc; font-size: 14px;'>
+	<tr>
+    <td> 
+    	public class Main {
+    	<br>&nbsp;public static void main(String[] args){
+    	<br> &nbsp; <span style='background-color:silver;'>int var1 = 10;</span>
+    	<br> &nbsp; Integer var2 = 20;
+    	<br> &nbsp; var1 = var2;
+    	<br>&nbsp;}
+    	<br>}
+		</td>
+    <td> 
+    	public class Main {
+    	<br>&nbsp;public static void main(String[] args){
+    	<br> &nbsp; int var1 = 10;
+    	<br> &nbsp; <span style='background-color:silver;'>Integer var2 = 20;</span>
+    	<br> &nbsp; var1 = var2;
+    	<br>&nbsp;}
+    	<br>}
+		</td>
+    <td> 
+    	public class Main {
+    	<br>&nbsp;public static void main(String[] args){
+    	<br> &nbsp; int var1 = 10;
+    	<br> &nbsp; Integer var2 = 20;
+    	<br> &nbsp; <span style='background-color:silver;'>var1 = var2;</span>
+    	<br>&nbsp;}
+    	<br>}
+		</td>
+	</tr>	
+	<tr>
+    <td> 
+<table style="font-size:8pt; background:white; border:0px; border-spacing:0px; margin:0px;padding:0;"> 
+<tbody id="value_table"> 
+   <tr>
+   </tr> 
+   <tr> 
+      <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:white; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </td> 
+      <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:white; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; main() &nbsp; </td> 
+      <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:white; "> &nbsp; </td> 
+   </tr> 
+   <tr> 
+      <td style = "margin:0px;padding:0;text-align:right; border:5px solid SkyBlue; background:SkyBlue;">var1</td> 
+      <td style = "margin:0px;padding:0;text-align:center; border:5px solid SkyBlue; background:white; color:red;">10</td> 
+   </tr> 
+   <tr> 
+      <td style = "margin:0px;padding:0;text-align:right; border:5px solid SkyBlue; background:SkyBlue;">var2</td> 
+      <td style = "margin:0px;padding:0;text-align:center; border:5px solid SkyBlue; background:white; color:red;"> </td> 
+   </tr> 
+   <tr> 
+      <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:white; "> &nbsp; </td> 
+   </tr> 
+   <tr>
+   	<td>
+   	</td>
+  </tr>
+</tbody> 
+</table>
+<br><br><br>&nbsp;
+		</td>
+    <td> 
+<table style="font-size:8pt; background:white; border:0px; border-spacing:0px; margin:0px;padding:0;"> 
+<tbody id="value_table"> 
+   <tr>
+   </tr> 
+   <tr> 
+      <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:white; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </td> 
+      <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:white; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; main() &nbsp; </td> 
+      <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:white; "> &nbsp; </td> 
+   </tr> 
+   <tr> 
+      <td style = "margin:0px;padding:0;text-align:right; border:5px solid SkyBlue; background:SkyBlue;">var1</td> 
+      <td style = "margin:0px;padding:0;text-align:center; border:5px solid SkyBlue; background:white;">10</td> 
+   </tr> 
+   <tr> 
+      <td style = "margin:0px;padding:0;text-align:right; border:5px solid SkyBlue; background:SkyBlue;">var2</td> 
+      <td style = "margin:0px;padding:0;text-align:center; border:5px solid SkyBlue; background:white; color:red;">(Integer객체01)</td> 
+   </tr> 
+   <tr> 
+      <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:white; "> &nbsp; </td> 
+   </tr> 
+   <tr> 
+      <td style = "margin:0px;padding:0;text-align:right; border:5px solid MediumSeaGreen; background:MediumSeaGreen;">(Integer객체01)</td> 
+      <td style = "margin:0px;padding:0;text-align:center; border:5px solid MediumSeaGreen; background:white; color:red;"> &nbsp; 20 &nbsp; </td> 
+   </tr> 
+   <tr> 
+      <td style = "margin:0px;padding:0;text-align:right; border:5px solid MediumSeaGreen; background:MediumSeaGreen;">&nbsp;</td> 
+      <td style = "margin:0px;padding:0;text-align:left; border:5px solid MediumSeaGreen; background:MediumSeaGreen;">등의 데이터와 메서드 포함</td>
+   </tr> 
+   <tr>
+   	<td><br>
+   	</td>
+  </tr>
+</tbody> 
+</table>
+		</td>
+    <td> 
+<table style="font-size:8pt; background:white; border:0px; border-spacing:0px; margin:0px;padding:0;"> 
+<tbody id="value_table"> 
+   <tr>
+   </tr> 
+   <tr> 
+      <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:white; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </td> 
+      <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:white; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; main() &nbsp; </td> 
+      <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:white; "> &nbsp; </td> 
+   </tr> 
+   <tr> 
+      <td style = "margin:0px;padding:0;text-align:right; border:5px solid SkyBlue; background:SkyBlue;">var1</td> 
+      <td style = "margin:0px;padding:0;text-align:center; border:5px solid SkyBlue; background:white; color:red;">20</td> 
+   </tr> 
+   <tr> 
+      <td style = "margin:0px;padding:0;text-align:right; border:5px solid SkyBlue; background:SkyBlue;">var2</td> 
+      <td style = "margin:0px;padding:0;text-align:center; border:5px solid SkyBlue; background:white;">(Integer객체01)</td> 
+   </tr> 
+   <tr> 
+      <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:white; "> &nbsp; </td> 
+   </tr> 
+   <tr> 
+      <td style = "margin:0px;padding:0;text-align:right; border:5px solid MediumSeaGreen; background:MediumSeaGreen;">(Integer객체01)</td> 
+      <td style = "margin:0px;padding:0;text-align:center; border:5px solid MediumSeaGreen; background:white;"> &nbsp; 20 &nbsp; </td> 
+   </tr> 
+   <tr> 
+      <td style = "margin:0px;padding:0;text-align:right; border:5px solid MediumSeaGreen; background:MediumSeaGreen;">&nbsp;</td> 
+      <td style = "margin:0px;padding:0;text-align:left; border:5px solid MediumSeaGreen; background:MediumSeaGreen;">등의 데이터와 메서드 포함</td>
+   </tr> 
+   <tr>
+   	<td><br>
+   	</td>
+  </tr>
+</tbody> 
+</table>
+		</td>
+	</tr>
+</table>
+
+<br><span style='color:red;'>garbage collection</span> &nbsp; 메모리 공간 중 더 이상 사용하지 않는 공간을 자동으로 찾아서 메모리 공간을 회수
+<br> 예) 아래 var=30; 이후 (Integer객체01)과 (Integer객체02)의 메모리 공간은 더 이상 사용하지 않으므로 회수 	  
+<br>
+<br>
+<table style='width:790px; margin:0; padding:0px; border:1px solid #bcbcbc; font-size: 14px;'>
+	<tr>
+    <td> 
+    	public class Main {
+    	<br>&nbsp;public static void main(String[] args){
+    	<br> &nbsp; <span style='background-color:silver;'>Integer var = 10;</span>
+    	<br> &nbsp; var = 20;
+    	<br> &nbsp; var = 30;
+    	<br>&nbsp;}
+    	<br>}
+		</td>
+    <td> 
+    	public class Main {
+    	<br>&nbsp;public static void main(String[] args){
+    	<br> &nbsp; Integer var = 10;
+    	<br> &nbsp; <span style='background-color:silver;'>var = 20;</span>
+    	<br> &nbsp; var = 30;
+    	<br>&nbsp;}
+    	<br>}
+		</td>
+    <td> 
+    	public class Main {
+    	<br>&nbsp;public static void main(String[] args){
+    	<br> &nbsp; Integer var = 10;
+    	<br> &nbsp; var = 20;
+    	<br> &nbsp; <span style='background-color:silver;'>var = 30;</span>
+    	<br>&nbsp;}
+    	<br>}
+		</td>
+	</tr>	
+	<tr>
+    <td> 
+<table style="font-size:8pt; background:white; border:0px; border-spacing:0px; margin:0px;padding:0;"> 
+<tbody id="value_table"> 
+   <tr>
+   </tr> 
+   <tr> 
+      <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:white; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </td> 
+      <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:white; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; main() &nbsp; </td> 
+      <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:white; "> &nbsp; </td> 
+   </tr> 
+   <tr> 
+      <td style = "margin:0px;padding:0;text-align:right; border:5px solid SkyBlue; background:SkyBlue;">var</td> 
+      <td style = "margin:0px;padding:0;text-align:center; border:5px solid SkyBlue; background:white; color:red;">(Integer객체01)</td> 
+   </tr> 
+   <tr> 
+      <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:white; "> &nbsp; </td> 
+   </tr> 
+   <tr> 
+      <td style = "margin:0px;padding:0;text-align:right; border:5px solid MediumSeaGreen; background:MediumSeaGreen;">(Integer객체01)</td> 
+      <td style = "margin:0px;padding:0;text-align:center; border:5px solid MediumSeaGreen; background:white; color:red;"> &nbsp; 10 &nbsp; </td> 
+   </tr> 
+   <tr> 
+      <td style = "margin:0px;padding:0;text-align:right; border:5px solid MediumSeaGreen; background:MediumSeaGreen;">&nbsp;</td> 
+      <td style = "margin:0px;padding:0;text-align:left; border:5px solid MediumSeaGreen; background:MediumSeaGreen;">등의 데이터와 메서드 포함</td>
+   </tr> 
+   <tr>
+   	<td><br>
+   	</td>
+  </tr>
+</tbody> 
+</table>
+<br><br><br><br><br>&nbsp;
+		</td>
+    <td> 
+<table style="font-size:8pt; background:white; border:0px; border-spacing:0px; margin:0px;padding:0;"> 
+<tbody id="value_table"> 
+   <tr>
+   </tr> 
+   <tr> 
+      <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:white; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </td> 
+      <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:white; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; main() &nbsp; </td> 
+      <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:white; "> &nbsp; </td> 
+   </tr> 
+   <tr> 
+      <td style = "margin:0px;padding:0;text-align:right; border:5px solid SkyBlue; background:SkyBlue;">var</td> 
+      <td style = "margin:0px;padding:0;text-align:center; border:5px solid SkyBlue; background:white; color:red;">(Integer객체02)</td> 
+   </tr> 
+   <tr> 
+      <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:white; "> &nbsp; </td> 
+   </tr> 
+   <tr> 
+      <td style = "margin:0px;padding:0;text-align:right; border:5px solid MediumSeaGreen; background:MediumSeaGreen;">(Integer객체01)</td> 
+      <td style = "margin:0px;padding:0;text-align:center; border:5px solid MediumSeaGreen; background:white;"> &nbsp; 10 &nbsp; </td> 
+   </tr> 
+   <tr> 
+      <td style = "margin:0px;padding:0;text-align:right; border:5px solid MediumSeaGreen; background:MediumSeaGreen;">&nbsp;</td> 
+      <td style = "margin:0px;padding:0;text-align:left; border:5px solid MediumSeaGreen; background:MediumSeaGreen;">등의 데이터와 메서드 포함</td>
+   </tr> 
+   <tr> 
+      <td style = "margin:0px;padding:0;text-align:right; border:5px solid YellowGreen; background:YellowGreen;">(Integer객체02)</td> 
+      <td style = "margin:0px;padding:0;text-align:center; border:5px solid YellowGreen; background:white; color:red;"> &nbsp; 20 &nbsp; </td> 
+   </tr> 
+   <tr> 
+      <td style = "margin:0px;padding:0;text-align:right; border:5px solid YellowGreen; background:YellowGreen;">&nbsp;</td> 
+      <td style = "margin:0px;padding:0;text-align:left; border:5px solid YellowGreen; background:YellowGreen;">등의 데이터와 메서드 포함</td>
+   </tr> 
+   <tr>
+   	<td><br>
+   	</td>
+  </tr>
+</tbody> 
+</table>
+<br><br><br>
+		</td>
+    <td> 
+<table style="font-size:8pt; background:white; border:0px; border-spacing:0px; margin:0px;padding:0;"> 
+<tbody id="value_table"> 
+   <tr>
+   </tr> 
+   <tr> 
+      <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:white; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </td> 
+      <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:white; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; main() &nbsp; </td> 
+      <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:white; "> &nbsp; </td> 
+   </tr> 
+   <tr> 
+      <td style = "margin:0px;padding:0;text-align:right; border:5px solid SkyBlue; background:SkyBlue;">var</td> 
+      <td style = "margin:0px;padding:0;text-align:center; border:5px solid SkyBlue; background:white; color:red;">(Integer객체03)</td> 
+   </tr> 
+   <tr> 
+      <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:white; "> &nbsp; </td> 
+   </tr> 
+   <tr> 
+      <td style = "margin:0px;padding:0;text-align:right; border:5px solid MediumSeaGreen; background:MediumSeaGreen;">(Integer객체01)</td> 
+      <td style = "margin:0px;padding:0;text-align:center; border:5px solid MediumSeaGreen; background:white;"> &nbsp; 10 &nbsp; </td> 
+   </tr> 
+   <tr> 
+      <td style = "margin:0px;padding:0;text-align:right; border:5px solid MediumSeaGreen; background:MediumSeaGreen;">&nbsp;</td> 
+      <td style = "margin:0px;padding:0;text-align:left; border:5px solid MediumSeaGreen; background:MediumSeaGreen;">등의 데이터와 메서드 포함</td>
+   </tr> 
+   <tr> 
+      <td style = "margin:0px;padding:0;text-align:right; border:5px solid YellowGreen; background:YellowGreen;">(Integer객체02)</td> 
+      <td style = "margin:0px;padding:0;text-align:center; border:5px solid YellowGreen; background:white;"> &nbsp; 20 &nbsp; </td> 
+   </tr> 
+   <tr> 
+      <td style = "margin:0px;padding:0;text-align:right; border:5px solid YellowGreen; background:YellowGreen;">&nbsp;</td> 
+      <td style = "margin:0px;padding:0;text-align:left; border:5px solid YellowGreen; background:YellowGreen;">등의 데이터와 메서드 포함</td>
+   </tr> 
+   <tr> 
+      <td style = "margin:0px;padding:0;text-align:right; border:5px solid MediumSeaGreen; background:MediumSeaGreen;">(Integer객체03)</td> 
+      <td style = "margin:0px;padding:0;text-align:center; border:5px solid MediumSeaGreen; background:white; color:red;"> &nbsp; 30 &nbsp; </td> 
+   </tr> 
+   <tr> 
+      <td style = "margin:0px;padding:0;text-align:right; border:5px solid MediumSeaGreen; background:MediumSeaGreen;">&nbsp;</td> 
+      <td style = "margin:0px;padding:0;text-align:left; border:5px solid MediumSeaGreen; background:MediumSeaGreen;">등의 데이터와 메서드 포함</td>
+   </tr> 
+   <tr>
+   	<td><br>
+   	</td>
+  </tr>
+</tbody> 
+</table>
+		</td>
+	</tr>
+</table>
+
+<br>
 				<br><br><br><br><br><br><br><br> &nbsp; 
 			</div>
 		</div>
